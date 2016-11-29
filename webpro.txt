@@ -102,6 +102,9 @@
               <a href = "放下一頁Html">
                 <img src = "next.png"class="img-responsive" alt = "Links">
               </a>
+              <a href = "放下一頁Html">
+                <img src = "home.png"class="img-responsive" alt = "Links">
+              </a>
             </p>
             
           </td>
