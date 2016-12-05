@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+body{
+	background-color: lightblue;
+}
+div{
+	background-color: lightgrey;
+	padding: 25px;
+	border: 25px;
+	margin: 25px;
+-webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+		box-sizing: content-box;
+}
+h1{
+	color: green;
+	font-family: 'cwTeXKai', serif;
+	margin-left: 20px;
+}
+p{
+	color: navy;
+	font-family: 'cwTeXKai', serif;
+	font-size: 14pt;
+}
+form{
+	color: navy;
+	font-family: 'cwTeXKai', serif;
+	font-size: 14pt;
+}
+#sure{
+	color: navy;
+	font-family: 'cwTeXKai', serif;
+	font-size: 14pt;
+	height:40px;
+	width:100px;
+}
+.highlight{
+	display: none;
+	margin: 20px;
+}
