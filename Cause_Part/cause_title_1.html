@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Health</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../check.js"></script>
+    <!-- Bootstrap -->
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <style>
+      body {
+        background-image: url("../pb.jpg");
+        background-position: center fixed;
+        background-size: cover;
+        height: 100%;
+      }
+
+      #tableHeight {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      #tableLeft {
+		width: 30%;
+      }
+
+      #tableWithBackground {
+        background-image: url("../clippaper.png");
+        background-repeat:no-repeat;
+        background-position:left top;
+		background-size:contain;
+		width: 30%;
+      }
+
+      #tableRight {
+		width: 40%;
+      }
+
+      #content {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+        margin-left: 30px;
+        font-size: 20px;
+      }
+
+      #contentRight {
+        margin-left: 200px;
+      }
+
+      .highlight{
+		display: none;
+        font-size: 20px;
+		margin: 20px;
+      }
+	  
+    </style>
+  </head>
+
+  <body> 
+
+    <div>
+      <table class="table-responsive" width="100%" id="tableHeight" >
+
+        <tr>
+
+          <td id="tableLeft">
+            <!--<img src="../post.png" class="img-responsive" alt="Responsive image">-->
+			<div style ="background-image: url('../post.png')">「錢多事少離家近、睡覺睡到自然醒！」想必這是許多人心中最夢幻的工作條件，然而職場競爭激烈，找工作大不易！好不容易接到公司的面試通知，你也慎重其事的提前到達面試地點，這時突然聽到有人叫你的名字，請問你覺得會是誰？</div>
+          </td>
+
+          <td id="tableWithBackground"> 
+              <div id="content">
+	          <form method="post" name="form_1" id="form_1">
+				<input type="radio" name="choice" value="1">A.同學<br>
+                    <p class="highlight" id="1A">解答：你在找工作的過程中，還有非常大的進步空間，也代表了你目前的求職態度並不積極，有一搭沒一搭的找，當然不容易成功，唯有下定決心、充滿自信的時候，做足了準備，熟悉即將投入的行業，錄取的機會便可增加。</p>
+				<input type="radio" name="choice" value="2">B.親戚<br>
+                    <p class="highlight" id="2A">解答：雖然透過親友介紹，你可以得到不少應徵機會，不過找工作跟談感情一樣寧缺勿濫！目前出現的工作機會並沒有很適合你，你當然有機會試試看，但結果往往沒有想像中順利，建議你多看多聽，從眾多的職缺中過濾挑選出真正適合的。</p>
+	            <input type="radio" name="choice" value="3">C.工作人員<br>
+                    <p class="highlight" id="3A">解答：求職成功機率非常高！現在可以找到還不錯的工作，過程也挺順利的。簡單來說，你缺的並不是機會；相反的，能做的事情很多，你必須從中挑選一個自己真正想做的工作，那麼才能在工作中發現樂趣並獲得成就感！</p>
+				<input type="radio" name="choice" value="4">D.舊同事<br>
+                    <p class="highlight" id="4A">解答：求職碰壁情況頗多！建議你專注於當下，別再受到過去經驗的影響而畫地自限，應該換個角度想，現在所面臨的挑戰都是對自我能力的考驗，如果你能夠臨危不亂、應對得宜，反而會讓你受到重視而被錄取！</p>
+				<input type="radio" name="choice" value="5">E.前主管<br>
+                    <p class="highlight" id="5A">解答：求職成功指數偏低！天時地利人和是求職成功的必要條件，可惜目前的你還沒有這股優勢，建議不妨先停下找工作的腳步，重新自我檢視，精進原有的專業技能，最好能考取證書證照，也可培養新興趣，增加競爭力，對往後求職大有幫助。</p>
+                <input type="button" value="確定" id="sure" onclick="showAnswer()">
+		</form>
+	      </div>
+          
+          </td>
+
+          <td id="tableRight">
+            <p id="contentRight">
+              <a href = "放下一頁Html">
+                <img src = "../next.png"class="img-responsive" alt = "Links">
+              </a>
+            </p>
+            
+          </td>
+
+        </tr>
+      </table>
+    </div>
+       
+    <script src="../js/jquery-3.1.1.slim.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
+
