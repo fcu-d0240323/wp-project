@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>money</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="check.js"></script>
+    <!-- Bootstrap -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <style>
+      body {
+        background-image: url("pb.jpg");
+        background-position: center fixed;
+        background-size: cover;
+        height: 100%;
+      }
+
+      #tableHeight {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      #tableLeft {
+	width: 30%;
+      }
+
+      #tableWithBackground {
+        background-image: url("clippaper.png");
+        background-repeat:no-repeat;
+        background-position:left top;
+	background-size:contain;
+	width: 30%;
+      }
+
+      #tableRight {
+	width: 40%;
+      }
+
+      #content {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+        margin-left: 30px;
+        font-size: 30px;
+      }
+
+      #contentRight {
+        margin-left: 200px;
+      }
+
+     .highlight{
+	display: none;
+        font-size: 20px;
+	margin: 20px;
+      }
+
+
+
+    </style>
+  </head>
+
+  <body> 
+
+    <div>
+      <table class="table-responsive" width="100%" id="tableHeight" >
+
+        <tr>
+
+          <td id="tableLeft">
+            <img src="post.png" class="img-responsive" alt="Responsive image">
+          </td>
+
+          <td id="tableWithBackground"> 
+              <div id="content">
+	          <form method="post" name="form_1" id="form_1">
+		    <input type="radio" name="choice" value="1">A.標準三房兩廳<br>
+                    <p class="highlight" id="1A">你老實穩重，絕不輕易奢侈浪費，深知錢財的寶貴，但這樣很容易被別人視為守財奴，還是建議你該花錢的時候不要手軟，否則會招來不必要的損失。</p>
+		    <input type="radio" name="choice" value="2">B.單人獨立空間<br>
+                    <p class="highlight" id="2A">表面上看你是個不大節儉的人，但實際上大家都看錯了，你對金錢的運用非常有條理，也極為理智，往往讓人在不知不覺中見到你拿出一大筆錢。</p>
+	            <input type="radio" name="choice" value="3">C.舒適的等面積房間<br>
+                    <p class="highlight" id="3A">你對於金錢極為敏銳，懂得理財，賺錢能力也很豐富，特別喜歡用股票、獎券等來賺大筆的意外之財。如果你能留心積財，你的財產會像滾雪球般愈滾愈大。</p>
+		    <input type="radio" name="choice" value="4">D.座北朝南、風水佳<br>
+                    <p class="highlight" id="4A">你是個一心一意想賺大錢的人，但往往因此而失去許多機會，別忘了那句老話：“心急吃不了熱豆腐”，路還是需要踏踏實實的走。</p>
+		    <input type="radio" name="choice" value="5">E.二人世界的溫馨小窩<br>
+                    <p class="highlight" id="5A">你的金錢座右銘是——錢是用來花的，不是用來存的，因此，對於你想要的東西，一定非買不可。不過，這樣花錢很容易上癮，奉勸你還是適當的克制一下。</p>
+		    <input type="radio" name="choice" value="6">F.寬闊無多隔間的西式洋房<br>
+                    <p class="highlight" id="6A">你沒有明確的金錢觀，只有在需要用錢時，才偶而感覺到錢的重要性，在這種惰性作用下，你很容易走上借錢度日的不歸路。</p>
+                    <input type="button" value="確定" id="sure" onclick="showAnswer()">
+		</form>
+	      </div>
+          
+          </td>
+
+          <td id="tableRight">
+            <p id="contentRight">
+              <a href = "money02.html">
+                <img src = "next.png"class="img-responsive" alt = "Links">
+              </a>
+              <a href = "money02.html">
+                <img src = "home.png"class="img-responsive" alt = "Links">
+              </a>
+            </p>
+            
+          </td>
+
+        </tr>
+      </table>
+    </div>
+       
+    <script src="js/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
