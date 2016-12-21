@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(function() {
+	$.ajax({
+		url: "http://140.134.26.71:58080/web-prog/Hotels",
+		type: "GET",
+		dataType: "json",
+		success: function(data) {
+			var items = data.Infos.Info;
+			for(var i = 0; i < items.length; i++) {
+				var name = items[i].Name;
+				var imgURL = items[i].Picture1	;
+				var URL = items[i].Website;
+				$("#attractions").append('<div class="col-sm-4"><div>'+name+
+				'</div><div class="row"><a href="'+URL+'" target="_blank"><img src="' + imgURL +'" height="200" width="200"></a></div></div>');
+				
+				
+			}
+		},
+		error: function() {
+		
+		}
+	});
+});
+
+</script>
+
+</head>
+<body>
+<h1>大飯店瀏覽</h1>
+
+<div id="attractions">
+</div>
+
+
+</body>
+</html>
