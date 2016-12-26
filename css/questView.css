@@ -1,0 +1,26 @@
+body {
+  background-image: url('../pb.jpg');
+  background-position: center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.highlight {
+  display: none;
+}
+
+#quest-img {
+    width: 100%;
+}
+
+#next-btn {
+    margin: auto;
+    text-align: center;
+}
+
+#quest-form {
+  position: absolute;
+  top:15%;
+  left: 15%;
+  font-size: 2em;
+}
