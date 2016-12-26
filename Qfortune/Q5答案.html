@@ -1,29 +1,118 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>無標題文件</title>
-<style type="text/css">
-body {
-	background-image: url(maxresdefault.jpg);
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-</style>
-</head>
+<!DOCTYPE html>
+<html>
 
-<body>
-<strong>252</strong>
-<p>旺旺來指數20分：代表現在的運是還不錯，如果你正遭遇不好的事情，那麼建議你稍安勿躁。</p>
-<p><strong>122</strong></p>
-<p>旺旺來指數40分：代表煩惱過度而拖累自己，建議你不要想東想西，可以多給自己一點休息喘息的空間，將有助於你的運勢發展。 </p>
-<p><strong>276</strong></p>
-<p>旺旺來指數60分：代表你的財富一直在向上攀升，有後勢看漲的趨勢，但仍不能採取投機或冒險的方式取得財富為佳。 </p>
-<p><strong>381</strong></p>
-<p>旺旺來指數80分：所以不好的事情已經過去，好運即將降臨，記得多說好話，多向外佈施，可以將好運一直維持。 </p>
-<p><strong>226</strong></p>
-<p>旺旺來指數100分：代表你的財運、工作運勢都非常棒，好運旺旺來指日可待。 </p>
-<p>&nbsp;</p>
-</body>
+  <head>
+    <title>fortune</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="check.js"></script>
+    <!-- Bootstrap -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <style>
+      body {
+        background-image: url("pb.jpg");
+        background-position: center fixed;
+        background-size: cover;
+        height: 100%;
+      }
+
+      #tableHeight {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      #tableLeft {
+        background-image: url("01.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        width: 40%;
+      }
+
+      #tableWithBackground {
+        background-image: url("clippaper.png");
+        background-repeat:no-repeat;
+        background-position:left top;
+	background-size: 100% 100%;
+	width: 40%;
+      }
+
+      #tableRight {
+	width: 10%;
+      }
+
+      #content {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+        margin-left: 30px;
+        font-size: 30px;
+      }
+
+      #contentRight {
+        margin-left: 200px;
+      }
+
+     .highlight{
+	display: none;
+        font-size: 20px;
+	margin: 20px;
+      }
+
+
+
+    </style>
+  </head>
+
+  <body> 
+
+    <div class="table-responsive">
+      <table id="tableHeight">
+
+        <tr>
+
+          <td id="tableLeft" width="40%" class="col-xs-12">
+            <img src="12.png" class="img-responsive" alt="Responsive image">
+          </td>
+
+          <td id="tableWithBackground" width="40%" class="col-md-12"> 
+              <div id="content" class="embed-responsive embed-responsive-16by9">
+	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+		    <input type="radio" name="choice" value="1">A.252<br>
+                    <p class="highlight" id="1A">旺旺來指數20分：代表現在的運是還不錯，如果你正遭遇不好的事情，那麼建議你稍安勿躁。</p>
+		    <input type="radio" name="choice" value="2">B.122<br>
+                    <p class="highlight" id="2A">旺旺來指數40分：代表煩惱過度而拖累自己，建議你不要想東想西，可以多給自己一點休息喘息的空間，將有助於你的運勢發展。</p>
+	            <input type="radio" name="choice" value="3">C.276<br>
+                    <p class="highlight" id="3A">旺旺來指數60分：代表你的財富一直在向上攀升，有後勢看漲的趨勢，但仍不能採取投機或冒險的方式取得財富為佳。</p>
+		    <input type="radio" name="choice" value="4">D.381<br>
+                    <p class="highlight" id="4A">旺旺來指數80分：所以不好的事情已經過去，好運即將降臨，記得多說好話，多向外佈施，可以將好運一直維持。</p>
+		    <input type="radio" name="choice" value="5">E.226<br>
+                    <p class="highlight" id="5A">旺旺來指數100分：代表你的財運、工作運勢都非常棒，好運旺旺來指日可待。</p>
+                    <input type="button" value="確定" id="sure" onclick="showAnswer()">
+		</form>
+	      </div>
+          
+          </td>
+
+          <td id="tableRight" width="10%" class="col-md-12">
+            <p id="contentRight">
+              <a href = "..\index.html">
+                <img src = "next.png"class="img-responsive" alt = "Links">
+              </a>
+            </p>
+            
+          </td>
+
+        </tr>
+      </table>
+    </div>
+       
+    <script src="js/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
+

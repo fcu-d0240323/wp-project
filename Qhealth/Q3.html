@@ -27,19 +27,22 @@
       }
 
       #tableLeft {
-	width: 30%;
+        background-image: url("05.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        width: 40%;
       }
 
       #tableWithBackground {
         background-image: url("clippaper.png");
         background-repeat:no-repeat;
         background-position:left top;
-	background-size:contain;
-	width: 30%;
+	background-size: 100% 100%;
+	width: 40%;
       }
 
       #tableRight {
-	width: 40%;
+	width: 10%;
       }
 
       #content {
@@ -67,42 +70,40 @@
 
   <body> 
 
-    <div>
-      <table class="table-responsive" width="100%" id="tableHeight" >
+    <div class="table-responsive">
+      <table id="tableHeight">
 
         <tr>
 
-          <td id="tableLeft">
-            <img src="post.png" class="img-responsive" alt="Responsive image">
-			<p>動物園裏，你與某種動物對視的一剎那，突然感覺你們彼此很像久別重逢的老朋友，你覺得這種動物會是下面四種中的哪種呢？ </p>
+          <td id="tableLeft" width="40%" class="col-xs-12">
+            <!--<img src="post.png" class="img-responsive" alt="Responsive image">-->
           </td>
 
-          <td id="tableWithBackground"> 
-              <div id="content">
-	          <form method="post" name="form_1" id="form_1">
-		    <input type="radio" name="choice" value="1">A.狗<br>
-                    <p class="highlight" id="1A">你的富翁潛力不足，但屬於那種大財沒有小財不斷的人。</p>
-		    <input type="radio" name="choice" value="2">B.馬<br>
-                    <p class="highlight" id="2A">你的富翁潛力十足，財源滾滾來，簡直是未來的大財主。</p>
-	            <input type="radio" name="choice" value="3">C.兔<br>
-                    <p class="highlight" id="3A">你一點富翁潛力都沒有，“勞苦”二字將是你人生的主題。</p>
-		    <input type="radio" name="choice" value="4">D.羊<br>
-                    <p class="highlight" id="4A">你有成為富翁的潛力，但與B不同的是，你需要更多的努力。</p>
-		    
+          <td id="tableWithBackground" width="40%" class="col-md-12"> 
+              <div id="content" class="embed-responsive embed-responsive-16by9">
+	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+		    <input type="radio" name="choice" value="1">A.木台<br>
+                    <p class="highlight" id="1A">你現在情緒欠佳，很想發牢騷，你若平靜地生活一段時間，是可行之法。</p>
+		    <input type="radio" name="choice" value="2">B.窗簾<br>
+                    <p class="highlight" id="2A">你現在具有歇斯底里症狀，或是你對眼前生活無法滿足，你最好松一下緊張情緒。</p>
+	            <input type="radio" name="choice" value="3">C.桌、椅<br>
+                    <p class="highlight" id="3A">你現在充滿活力，充滿奮發向上的情緒。</p>
+		    <input type="radio" name="choice" value="4">D.床<br>
+                    <p class="highlight" id="4A">你現在好象很疲倦，而且很想消除你的疲勞，你應該去散散心。</p>
+		    <input type="radio" name="choice" value="5">E.書櫥<br>
+                    <p class="highlight" id="5A">你現在身心均安，任何事情均可以冷靜處理。</p>
                     <input type="button" value="確定" id="sure" onclick="showAnswer()">
 		</form>
 	      </div>
           
           </td>
 
-          <td id="tableRight">
+          <td id="tableRight" width="10%" class="col-md-12">
             <p id="contentRight">
-              <a href = "放下一頁Html">
+              <a href = "Q4.html">
                 <img src = "next.png"class="img-responsive" alt = "Links">
               </a>
-              <a href = "放下一頁Html">
-                <img src = "home.png"class="img-responsive" alt = "Links">
-              </a>
+
             </p>
             
           </td>

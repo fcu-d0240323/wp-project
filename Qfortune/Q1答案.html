@@ -1,28 +1,118 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>無標題文件</title>
-<style type="text/css">
-body {
-	background-image: url(maxresdefault.jpg);
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-</style>
-</head>
+<!DOCTYPE html>
+<html>
 
-<body>
-<strong>數字1</strong>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 數字1，開春好運80分，若你在過年前有什麼官司的話，今年新春後將有機會平反，正義終將到來喔！</p>
-<strong>數字2</strong>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 數字2，開春好運60分，想要桃花就有桃花，情慾方面會有相當不錯的好運氣！</p>
-<strong>數字3</strong>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 數字3，開春好運100分，事業、人際關係方面都能有好運，恭喜你囉！</p>
-<strong>數字4</strong>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; 數字4，開春好運20分，代表你心思單純，所以會不小心錯過好運，提醒你過年期間要更謹慎一些，免得有些損失發生！</p>
-<strong>數字5</strong>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; 數字5，開春好運40分，代表著友誼方面的好運，所以在新春期間會有朋友打電話來，更有機會遇到或聯絡到以前的國、高中 同學。</p>
-</body>
+  <head>
+    <title>fortune</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="check.js"></script>
+    <!-- Bootstrap -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <style>
+      body {
+        background-image: url("pb.jpg");
+        background-position: center fixed;
+        background-size: cover;
+        height: 100%;
+      }
+
+      #tableHeight {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      #tableLeft {
+        background-image: url("01.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        width: 40%;
+      }
+
+      #tableWithBackground {
+        background-image: url("clippaper.png");
+        background-repeat:no-repeat;
+        background-position:left top;
+	background-size: 100% 100%;
+	width: 40%;
+      }
+
+      #tableRight {
+	width: 10%;
+      }
+
+      #content {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+        margin-left: 30px;
+        font-size: 30px;
+      }
+
+      #contentRight {
+        margin-left: 200px;
+      }
+
+     .highlight{
+	display: none;
+        font-size: 20px;
+	margin: 20px;
+      }
+
+
+
+    </style>
+  </head>
+
+  <body> 
+
+    <div class="table-responsive">
+      <table id="tableHeight">
+
+        <tr>
+
+          <td id="tableLeft" width="40%" class="col-xs-12">
+            <img src="12.png" class="img-responsive" alt="Responsive image">
+          </td>
+
+          <td id="tableWithBackground" width="40%" class="col-md-12"> 
+              <div id="content" class="embed-responsive embed-responsive-16by9">
+	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+		    <input type="radio" name="choice" value="1">A.數字1<br>
+                    <p class="highlight" id="1A">數字1，開春好運80分，若你在過年前有什麼官司的話，今年新春後將有機會平反，正義終將到來喔！</p>
+		    <input type="radio" name="choice" value="2">B.數字2<br>
+                    <p class="highlight" id="2A">數字2，開春好運60分，想要桃花就有桃花，情慾方面會有相當不錯的好運氣！</p>
+	            <input type="radio" name="choice" value="3">C.數字3<br>
+                    <p class="highlight" id="3A">數字3，開春好運100分，事業、人際關係方面都能有好運，恭喜你囉！</p>
+		    <input type="radio" name="choice" value="4">D.數字4<br>
+                    <p class="highlight" id="4A">數字4，開春好運20分，代表你心思單純，所以會不小心錯過好運，提醒你過年期間要更謹慎一些，免得有些損失發生！。</p>
+		    <input type="radio" name="choice" value="5">E.數字5<br>
+                    <p class="highlight" id="5A">數字5，開春好運40分，代表著友誼方面的好運，所以在新春期間會有朋友打電話來，更有機會遇到或聯絡到以前的國、高中 同學。</p>
+                    <input type="button" value="確定" id="sure" onclick="showAnswer()">
+		</form>
+	      </div>
+          
+          </td>
+
+          <td id="tableRight" width="10%" class="col-md-12">
+            <p id="contentRight">
+              <a href = "Q2答案.html">
+                <img src = "next.png"class="img-responsive" alt = "Links">
+              </a>
+            </p>
+            
+          </td>
+
+        </tr>
+      </table>
+    </div>
+       
+    <script src="js/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
+
