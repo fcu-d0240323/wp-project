@@ -83,7 +83,7 @@
                     <p class="highlight" id="1A">解答</p>
 		    <input type="radio" name="choice" value="2">B.選項名稱<br>
                     <p class="highlight" id="2A">解答</p>
-	            <input type="radio" name="choice" value="3">C.選項名稱<br>
+	           	    <input type="radio" name="choice" value="3">C.選項名稱<br>
                     <p class="highlight" id="3A">解答</p>
 		    <input type="radio" name="choice" value="4">D.選項名稱<br>
                     <p class="highlight" id="4A">解答</p>

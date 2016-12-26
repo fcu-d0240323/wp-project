@@ -1,29 +1,118 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>無標題文件</title>
-<style type="text/css">
-body {
-	background-image: url(maxresdefault.jpg);
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-</style>
-</head>
+<!DOCTYPE html>
+<html>
 
-<body>
-<strong>112</strong>
-<p>你選擇的是數字112，漸入佳境指數20分。這代表成長的空間還很大，本身有很多想法與目標，但是現在還沒走在對的路上，需要再調整一下，可能要更專注把焦點集中。</p>
-<p><strong>317</strong></p>
-<p>你選擇的是數字317，漸入佳境指數40分。可靠貴人幫忙，且在感情上可以突破困境，感情與事業可雙管齊下漸入佳境。  </p>
-<p><strong>178</strong></p>
-<p>你選擇的是數字178，漸入佳境指數80分。工作會得心應手，工作及賺錢機會將越來越多，工作運越來越旺。  </p>
-<p><strong>166</strong></p>
-<p>你選擇的是數字166，漸入佳境指數100分。財務及金錢運越來越好，也就是財運亨通、財源廣進。  </p>
-<p><strong>377</strong></p>
-<p>你選擇的是數字377，漸入佳境指數40分。生病或身體不適將會漸漸好轉，表示你身體越來越健康喔！  </p>
-<p>&nbsp;</p>
-</body>
+  <head>
+    <title>fortune</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="check.js"></script>
+    <!-- Bootstrap -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <style>
+      body {
+        background-image: url("pb.jpg");
+        background-position: center fixed;
+        background-size: cover;
+        height: 100%;
+      }
+
+      #tableHeight {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      #tableLeft {
+        background-image: url("01.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        width: 40%;
+      }
+
+      #tableWithBackground {
+        background-image: url("clippaper.png");
+        background-repeat:no-repeat;
+        background-position:left top;
+	background-size: 100% 100%;
+	width: 40%;
+      }
+
+      #tableRight {
+	width: 10%;
+      }
+
+      #content {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+        margin-left: 30px;
+        font-size: 30px;
+      }
+
+      #contentRight {
+        margin-left: 200px;
+      }
+
+     .highlight{
+	display: none;
+        font-size: 20px;
+	margin: 20px;
+      }
+
+
+
+    </style>
+  </head>
+
+  <body> 
+
+    <div class="table-responsive">
+      <table id="tableHeight">
+
+        <tr>
+
+          <td id="tableLeft" width="40%" class="col-xs-12">
+            <img src="17.png" class="img-responsive" alt="Responsive image">
+          </td>
+
+          <td id="tableWithBackground" width="40%" class="col-md-12"> 
+              <div id="content" class="embed-responsive embed-responsive-16by9">
+	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+		    <input type="radio" name="choice" value="1">A.112<br>
+                    <p class="highlight" id="1A">你選擇的是數字112，漸入佳境指數20分。這代表成長的空間還很大，本身有很多想法與目標，但是現在還沒走在對的路上，需要再調整一下，可能要更專注把焦點集中。</p>
+		    <input type="radio" name="choice" value="2">B.317<br>
+                    <p class="highlight" id="2A">你選擇的是數字317，漸入佳境指數40分。可靠貴人幫忙，且在感情上可以突破困境，感情與事業可雙管齊下漸入佳境。</p>
+	            <input type="radio" name="choice" value="3">C.178<br>
+                    <p class="highlight" id="3A">你選擇的是數字178，漸入佳境指數80分。工作會得心應手，工作及賺錢機會將越來越多，工作運越來越旺。</p>
+		    <input type="radio" name="choice" value="4">D.166<br>
+                    <p class="highlight" id="4A">你選擇的是數字166，漸入佳境指數100分。財務及金錢運越來越好，也就是財運亨通、財源廣進。</p>
+		    <input type="radio" name="choice" value="5">E.377<br>
+                    <p class="highlight" id="5A">你選擇的是數字377，漸入佳境指數40分。生病或身體不適將會漸漸好轉，表示你身體越來越健康喔！</p>
+                    <input type="button" value="確定" id="sure" onclick="showAnswer()">
+		</form>
+	      </div>
+          
+          </td>
+
+          <td id="tableRight" width="10%" class="col-md-12">
+            <p id="contentRight">
+              <a href = "Q3答案.html">
+                <img src = "next.png"class="img-responsive" alt = "Links">
+              </a>
+            </p>
+            
+          </td>
+
+        </tr>
+      </table>
+    </div>
+       
+    <script src="js/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
+

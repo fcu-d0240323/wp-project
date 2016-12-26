@@ -1,35 +1,118 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>無標題文件</title>
-<style type="text/css">
-body {
-	background-image: url(maxresdefault.jpg);
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-</style>
-</head>
+<!DOCTYPE html>
+<html>
 
-<body>
-<strong>無敵光頭妹</strong>
-<p>最近會有意外的財運，只是天下沒有不勞而獲的午餐，你得辛勤付出，才有豐碩的收穫。</p>
-<p><strong>缺牙美少女</strong></p>
-<p>最近會有貴人相助，此外，和家人的關係也會更好、更融洽。  </p>
-<p><strong>驚人痘花妹</strong></p>
-<p>異性緣增加，會有約會的機會，只是這種桃花可能不帶什麼曖昧的空間，想要更進一步，還得多多努力。  </p>
-<p><strong>竹竿妹</strong></p>
-<p>最近會有意外的財運，只是天下沒有不勞而獲的午餐，你得辛勤付出，才有豐碩的收穫。  </p>
-<p><strong>神經病阿飄妹</strong></p>
-<p>異性緣增加，會有約會的機會，只是這種桃花可能不帶什麼曖昧的空間，想要更進一步，還得多多努力。  </p>
-<p><strong>圓滾滾小胖妹</strong></p>
-<p>有和同性朋友吃喝玩樂的機會，只是對方並不能給你其他實質的好處，甚至還會讓你的財務更糟。  </p>
-<p><strong>暴力肌肉妹</strong></p>
-<p>平淡就是福，別太奢望會有什麼好運，還不如有空多陪陪家人。  </p>
-<p><strong>也是老媽媽</strong></p>
-<p>平淡就是福，別太奢望會有什麼好運，還不如有空多陪陪家人。  </p>
-<p>&nbsp;</p>
-</body>
+  <head>
+    <title>fortune</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="check.js"></script>
+    <!-- Bootstrap -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <style>
+      body {
+        background-image: url("pb.jpg");
+        background-position: center fixed;
+        background-size: cover;
+        height: 100%;
+      }
+
+      #tableHeight {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      #tableLeft {
+        background-image: url("01.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        width: 40%;
+      }
+
+      #tableWithBackground {
+        background-image: url("clippaper.png");
+        background-repeat:no-repeat;
+        background-position:left top;
+	background-size: 100% 100%;
+	width: 40%;
+      }
+
+      #tableRight {
+	width: 10%;
+      }
+
+      #content {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+        margin-left: 30px;
+        font-size: 30px;
+      }
+
+      #contentRight {
+        margin-left: 200px;
+      }
+
+     .highlight{
+	display: none;
+        font-size: 20px;
+	margin: 20px;
+      }
+
+
+
+    </style>
+  </head>
+
+  <body> 
+
+    <div class="table-responsive">
+      <table id="tableHeight">
+
+        <tr>
+
+          <td id="tableLeft" width="40%" class="col-xs-12">
+            <!--<img src="17.png" class="img-responsive" alt="Responsive image">-->
+          </td>
+
+          <td id="tableWithBackground" width="40%" class="col-md-12"> 
+              <div id="content" class="embed-responsive embed-responsive-16by9">
+	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+		    <input type="radio" name="choice" value="1">A.無敵光頭妹<br>
+                    <p class="highlight" id="1A">最近會有意外的財運，只是天下沒有不勞而獲的午餐，你得辛勤付出，才有豐碩的收穫。</p>
+		    <input type="radio" name="choice" value="2">B.缺牙美少女<br>
+                    <p class="highlight" id="2A">最近會有貴人相助，此外，和家人的關係也會更好、更融洽。</p>
+	            <input type="radio" name="choice" value="3">C.驚人痘花妹<br>
+                    <p class="highlight" id="3A">異性緣增加，會有約會的機會，只是這種桃花可能不帶什麼曖昧的空間，想要更進一步，還得多多努力。</p>
+		    <input type="radio" name="choice" value="4">D.圓滾滾小胖妹<br>
+                    <p class="highlight" id="4A">有和同性朋友吃喝玩樂的機會，只是對方並不能給你其他實質的好處，甚至還會讓你的財務更糟。</p>
+		    <input type="radio" name="choice" value="5">E.暴力肌肉妹<br>
+                    <p class="highlight" id="5A">平淡就是福，別太奢望會有什麼好運，還不如有空多陪陪家人。</p>
+                    <input type="button" value="確定" id="sure" onclick="showAnswer()">
+		</form>
+	      </div>
+          
+          </td>
+
+          <td id="tableRight" width="10%" class="col-md-12">
+            <p id="contentRight">
+              <a href = "Q5答案.html">
+                <img src = "next.png"class="img-responsive" alt = "Links">
+              </a>
+            </p>
+            
+          </td>
+
+        </tr>
+      </table>
+    </div>
+       
+    <script src="js/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
+

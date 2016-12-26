@@ -1,29 +1,118 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>無標題文件</title>
-<style type="text/css">
-body {
-	background-image: url(maxresdefault.jpg);
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-</style>
-</head>
+<!DOCTYPE html>
+<html>
 
-<body>
-<strong>112</strong>
-<p>你選擇的是112，幸運之神眷顧指數20分。代表你在工作上的薪水一直都比較低，待遇不如他人，在工作量上，也都比別人還要多，所得更是不如預期，建議你此時就是多多忍耐囉！</p>
-<p><strong>377</strong></p>
-<p>你選擇的是377，幸運之神眷顧指數60分。最近這一個禮拜，經常會有人請吃飯，大部分是人家為了感激你，或因為你的身分、地位給你的奉承，所以選到377的人也代表你的地位在這一週是扶搖直上的喔！  </p>
-<p><strong>517</strong></p>
-<p>你選擇的是517，幸運之神眷顧指數80分。代表你的感情將再次升溫，有關男女間的戀情會很甜蜜如意；此外，你若在團體或單位中，也代表你的心情是會非常開心的喔！  </p>
-<p><strong>358</strong></p>
-<p>你選擇的是358，幸運之神眷顧指數40分。代表在投資方面是先得財後破財的徵象，建議你在這段時間先守住正財就好，不要有其他非分之想，更不要亂投資，這樣就不會有破財了！  </p>
-<p><strong>143</strong></p>
-<p>你選擇的是143，幸運之神眷顧指數100分。代表在這一週財運特別地好，人緣也超好喔！  </p>
-<p>&nbsp;</p>
-</body>
+  <head>
+    <title>fortune</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="check.js"></script>
+    <!-- Bootstrap -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <style>
+      body {
+        background-image: url("pb.jpg");
+        background-position: center fixed;
+        background-size: cover;
+        height: 100%;
+      }
+
+      #tableHeight {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      #tableLeft {
+        background-image: url("01.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        width: 40%;
+      }
+
+      #tableWithBackground {
+        background-image: url("clippaper.png");
+        background-repeat:no-repeat;
+        background-position:left top;
+	background-size: 100% 100%;
+	width: 40%;
+      }
+
+      #tableRight {
+	width: 10%;
+      }
+
+      #content {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+        margin-left: 30px;
+        font-size: 30px;
+      }
+
+      #contentRight {
+        margin-left: 200px;
+      }
+
+     .highlight{
+	display: none;
+        font-size: 20px;
+	margin: 20px;
+      }
+
+
+
+    </style>
+  </head>
+
+  <body> 
+
+    <div class="table-responsive">
+      <table id="tableHeight">
+
+        <tr>
+
+          <td id="tableLeft" width="40%" class="col-xs-12">
+            <img src="12.png" class="img-responsive" alt="Responsive image">
+          </td>
+
+          <td id="tableWithBackground" width="40%" class="col-md-12"> 
+              <div id="content" class="embed-responsive embed-responsive-16by9">
+	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+		    <input type="radio" name="choice" value="1">A.112<br>
+                    <p class="highlight" id="1A">你選擇的是112，幸運之神眷顧指數20分。代表你在工作上的薪水一直都比較低，待遇不如他人，在工作量上，也都比別人還要多，所得更是不如預期，建議你此時就是多多忍耐囉！</p>
+		    <input type="radio" name="choice" value="2">B.377<br>
+                    <p class="highlight" id="2A">你選擇的是377，幸運之神眷顧指數60分。最近這一個禮拜，經常會有人請吃飯，大部分是人家為了感激你，或因為你的身分、地位給你的奉承，所以選到377的人也代表你的地位在這一週是扶搖直上的喔！</p>
+	            <input type="radio" name="choice" value="3">C.517<br>
+                    <p class="highlight" id="3A">你選擇的是517，幸運之神眷顧指數80分。代表你的感情將再次升溫，有關男女間的戀情會很甜蜜如意；此外，你若在團體或單位中，也代表你的心情是會非常開心的喔！</p>
+		    <input type="radio" name="choice" value="4">D.358<br>
+                    <p class="highlight" id="4A">你選擇的是358，幸運之神眷顧指數40分。代表在投資方面是先得財後破財的徵象，建議你在這段時間先守住正財就好，不要有其他非分之想，更不要亂投資，這樣就不會有破財了！</p>
+		    <input type="radio" name="choice" value="5">E.143<br>
+                    <p class="highlight" id="5A">你選擇的是143，幸運之神眷顧指數100分。代表在這一週財運特別地好，人緣也超好喔！</p>
+                    <input type="button" value="確定" id="sure" onclick="showAnswer()">
+		</form>
+	      </div>
+          
+          </td>
+
+          <td id="tableRight" width="10%" class="col-md-12">
+            <p id="contentRight">
+              <a href = "Q5答案.html">
+                <img src = "next.png"class="img-responsive" alt = "Links">
+              </a>
+            </p>
+            
+          </td>
+
+        </tr>
+      </table>
+    </div>
+       
+    <script src="js/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
+
