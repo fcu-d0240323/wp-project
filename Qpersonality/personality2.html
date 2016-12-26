@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>personality</title>
+    <title>Health</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="check.js"></script>
     <!-- Bootstrap -->
@@ -27,19 +27,22 @@
       }
 
       #tableLeft {
-	width: 30%;
+        background-image: url("personality2.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        width: 40%;
       }
 
       #tableWithBackground {
         background-image: url("clippaper.png");
         background-repeat:no-repeat;
         background-position:left top;
-	background-size:contain;
-	width: 30%;
+	background-size: 100% 100%;
+	width: 40%;
       }
 
       #tableRight {
-	width: 40%;
+	width: 10%;
       }
 
       #content {
@@ -67,44 +70,43 @@
 
   <body> 
 
-    <div>
-      <table class="table-responsive" width="100%" id="tableHeight" >
+    <div class="table-responsive">
+      <table id="tableHeight">
 
         <tr>
 
-          <td id="tableLeft">
-            <img src="personality2.png" class="img-responsive" alt="Responsive image">
+          <td id="tableLeft" width="40%" class="col-xs-12">
+            <!--<img src="post.png" class="img-responsive" alt="Responsive image">-->
           </td>
 
-          <td id="tableWithBackground"> 
-              <div id="content">
-	          <form method="post" name="form_1" id="form_1">
+          <td id="tableWithBackground" width="40%" class="col-md-12"> 
+              <div id="content" class="embed-responsive embed-responsive-16by9">
+	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
 		    <input type="radio" name="choice" value="1">A.一筆遺產<br>
-                    <p class="highlight" id="1A">在您隱藏的性格中，您有完美主義的因子存在，您每次的表現，
-					都希望是最好的所以您具有【完美主義的性格】。這類型的人，雖然在別人眼裡已經是100分了，可是自己
-					卻還希望自己可以做到最好，因此常常會給自己無形的壓力。
-</p>
+                    <p class="highlight" id="1A">在您隱藏的性格中，您有完美主義的因子存在，您每次的表現，都希望是最好的所
+					以您具有【完美主義的性格】。這類型的人，雖然在別人眼裡已經是100分了，可是自己卻還希望自己可以做到最好，因此常常會給自己無形的壓力。</p>
 		    <input type="radio" name="choice" value="2">B.一個您的私人秘密<br>
-                    <p class="highlight" id="2A">在您隱藏的性格中，您有不服輸性格，挫折越大越能激發您的韌性，所以您具有
-					【賭徒的性格】。這類型的人，非常勇敢，覺得任何的挫折和困難，都無法把自己打倒，所以遇到越大的挫折，越能激發自己的鬥志力。</p>
+                    <p class="highlight" id="2A">在您隱藏的性格中，您有不服輸性格，挫折越大越能激發您的韌性，所以您具有【賭徒的性格】。這類型的人，
+					非常勇敢，覺得任何的挫折和困難，都無法把自己打倒，所以遇到越大的挫折，越能激發自己的鬥志力。</p>
 	            <input type="radio" name="choice" value="3">C.一棟豪宅<br>
-                    <p class="highlight" id="3A">在您隱藏的性格中，您需要安全感，您害怕受傷害，容易變的很沒自信，所以您具有【懷疑的性格】。這類型的人，
-					在性格上需要很多的安全感，不管是在金錢、工作或是成就感上，當失去安全感時，就很容易失去自信心。</p>
+                    <p class="highlight" id="3A">在您隱藏的性格中，您需要安全感，您害怕受傷害，容易變的很沒自信，所以您具有【懷疑的性格】。這類型的人，在性
+					格上需要很多的安全感，不管是在金錢、工作或是成就感上，當失去安全感時，就很容易失去自信心。</p>
 		    <input type="radio" name="choice" value="4">D.一本屬於您的日記<br>
-                    <p class="highlight" id="4A">在您隱藏的性格中，您是非常注重隱私權的，您會維護自己的私密空間，所以您具有【保護的性格】。這類型的人，
-					在處理公事時盡心盡力，在私人的時間裡，喜歡跟親密的人，呆在被保護的空間之內，好完成另外一個真實的自己。</p>
-		
+                    <p class="highlight" id="4A">在您隱藏的性格中，您是非常注重隱私權的，您會維護自己的私密空間，所以您具有【保護的性格】。這類型的人，在處理公
+					事時盡心盡力，在私人的時間裡，喜歡跟親密的人，呆在被保護的空間之內，好完成另外一個真實的自己。</p>
+		   
                     <input type="button" value="確定" id="sure" onclick="showAnswer()">
 		</form>
 	      </div>
           
           </td>
 
-          <td id="tableRight">
+          <td id="tableRight" width="10%" class="col-md-12">
             <p id="contentRight">
               <a href = "personality3.html">
                 <img src = "next.png"class="img-responsive" alt = "Links">
               </a>
+          
             </p>
             
           </td>

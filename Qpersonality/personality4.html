@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>personality</title>
+    <title>Health</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="check.js"></script>
     <!-- Bootstrap -->
@@ -27,19 +27,22 @@
       }
 
       #tableLeft {
-	width: 30%;
+        background-image: url("personality4.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        width: 40%;
       }
 
       #tableWithBackground {
         background-image: url("clippaper.png");
         background-repeat:no-repeat;
         background-position:left top;
-	background-size:contain;
-	width: 30%;
+	background-size: 100% 100%;
+	width: 40%;
       }
 
       #tableRight {
-	width: 40%;
+	width: 10%;
       }
 
       #content {
@@ -67,48 +70,50 @@
 
   <body> 
 
-    <div>
-      <table class="table-responsive" width="100%" id="tableHeight" >
+    <div class="table-responsive">
+      <table id="tableHeight">
 
         <tr>
 
-          <td id="tableLeft">
-            <img src="post.png" class="img-responsive" alt="Responsive image">
+          <td id="tableLeft" width="40%" class="col-xs-12">
+            <!--<img src="post.png" class="img-responsive" alt="Responsive image">-->
           </td>
 
-          <td id="tableWithBackground"> 
-              <div id="content">
-	          <form method="post" name="form_1" id="form_1">
-		    <input type="radio" name="choice" value="1">A、伸出時手背朝上張開手指<br>
-                    <p class="highlight" id="1A">喜歡簡單，不喜歡麻煩和累的感覺
-　　為人健忘不記仇，只要沒有碰到他的底線，一切都是過眼雲煙。有鬥誌愛拼搏，刻苦努力。別人對他好的話，
-一定加倍對別人好。天生的統籌規劃專家，計劃性強。固執，明明知道是錯還是往前走，撞了南墻也不回頭。討厭做決定，
-但是挑個顏色都能讓他們糾結半天。愛笑，一點小事就笑逐顏開，什麼都寫在臉上。愛恨分明，喜歡就極度喜歡，討厭就絲毫不搭理。</p>
-		    <input type="radio" name="choice" value="2">B、伸出時手背朝上合著手指<br>
-                    <p class="highlight" id="2A">很替他人著想，常試圖改變自己來迎合對方
-　　外表看起來親切熱情，內心卻是喜歡安靜的環境。膽小，害怕失敗，但是從來不在別人面前表現出來，假裝強悍。直覺敏銳，很輕易看透他人
-的小伎倆，那些小花招在你面前完全沒有用。非常珍惜友誼，但是不會輕易和他人成為死黨。很忍耐，什麼事情都放在自己心里，一個人承受。不愛爭搶，
-認為是自己的就是自己的。害怕孤獨，雖然在人面前總是嘻嘻哈哈，但是內心還是害怕一個人的。</p>
-	            <input type="radio" name="choice" value="3">C、伸出時手心朝上張開手指<br>
-                    <p class="highlight" id="3A">喜歡裝作堅強、裝冷酷，讓人捉摸不透
-　　不輕易表露悲傷，但是又希望別人能發現自己的悲傷然後安慰。希望得到別人的了解和關愛。浪漫體貼，對自己愛的人很細心。害怕被忽略，對人關心不會掛
-在嘴上，而是細心地體貼。內心藏著很多秘密，只和最親密的人分享。慢熱，陌生人面前十分文靜，遇見開心的事會說個不停，不開心會躲起來哭。</p>
-		    <input type="radio" name="choice" value="4">D、伸出時手心朝上合著手指<br>
-                    <p class="highlight" id="4A">吃軟不吃硬，經常口是心非。樂觀但是又悲觀，需要安全感，偏向感性。
-　　不擅長拒絕別人的求助，基本上有求必應，容易被騙。害怕受傷，對陌生人高冷，但是喜歡交友，一但成為朋友，就嘻嘻哈哈玩樂不停。故作堅強，被
-人誤解也不願意解釋，多愁善感，容易陷入一些小事中。喜歡錢，但是不會特別在乎，討厭做沒有意義的事。害怕被冷落。</p>
-		  
+          <td id="tableWithBackground" width="40%" class="col-md-12"> 
+              <div id="content" class="embed-responsive embed-responsive-16by9">
+	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+		    <input type="radio" name="choice" value="1">A.伸出時手背朝上張開手指<br>
+                    <p class="highlight" id="1A">為人健忘不記仇，只要沒有碰到他的底線，一切都是過眼雲煙。有鬥誌愛拼搏，
+					刻苦努力。別人對他好的話，一定加倍對別人好。天生的統籌規劃專家，計劃性強。固執，明明知道是錯還是往前走
+					，撞了南墻也不回頭。討厭做決定，但是挑個顏色都能讓他們糾結半天。愛笑，一點小事就笑逐顏開，什麼都寫在臉上。
+					愛恨分明，喜歡就極度喜歡，討厭就絲毫不搭理。</p>
+		    <input type="radio" name="choice" value="2">B.伸出時手背朝上合著手指<br>
+
+                    <p class="highlight" id="2A">外表看起來親切熱情，內心卻是喜歡安靜的環境。膽小，害怕失敗，但是從來不在別人面前
+					表現出來，假裝強悍。直覺敏銳，很輕易看透他人的小伎倆，那些小花招在你面前完全沒有用。非常珍惜友誼，但是不會
+					輕易和他人成為死黨。很忍耐，什麼事情都放在自己心里，一個人承受。不愛爭搶，認為是自己的就是自己的。害怕孤獨
+					，雖然在人面前總是嘻嘻哈哈，但是內心還是害怕一個人的。</p>
+	            <input type="radio" name="choice" value="3">C.伸出時手心朝上張開手指<br>
+                    <p class="highlight" id="3A">不輕易表露悲傷，但是又希望別人能發現自己的悲傷然後安慰。希望得到別人的了解和關愛
+					。浪漫體貼，對自己愛的人很細心。害怕被忽略，對人關心不會掛在嘴上，而是細心地體貼。內心藏著很多秘密，只和最
+					親密的人分享。慢熱，陌生人面前十分文靜，遇見開心的事會說個不停，不開心會躲起來哭。</p>
+		    <input type="radio" name="choice" value="4">D.伸出時手心朝上合著手指<br>
+                    <p class="highlight" id="4A">不擅長拒絕別人的求助，基本上有求必應，容易被騙。害怕受傷，對陌生人高冷，但是喜歡
+					交友，一但成為朋友，就嘻嘻哈哈玩樂不停。故作堅強，被人誤解也不願意解釋，多愁善感，容易陷入一些小事中。喜歡
+					錢，但是不會特別在乎，討厭做沒有意義的事。害怕被冷落。</p>
+		    
                     <input type="button" value="確定" id="sure" onclick="showAnswer()">
 		</form>
 	      </div>
           
           </td>
 
-          <td id="tableRight">
+          <td id="tableRight" width="10%" class="col-md-12">
             <p id="contentRight">
               <a href = "personality5.html">
                 <img src = "next.png"class="img-responsive" alt = "Links">
               </a>
+          
             </p>
             
           </td>
