@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="check.js"></script>
+    <!-- Bootstrap -->
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <style>
+      body {
+        background-image: url("pb.jpg");
+        background-position: center fixed;
+        background-size: cover;
+        height: 100%;
+      }
+
+      #tableHeight {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      #tableLeft {
+		width: 30%;
+      }
+
+      #tableWithBackground {
+        background-image: url("clippaper.png");
+        background-repeat:no-repeat;
+        background-position:left top;
+		background-size:contain;
+		width: 30%;
+      }
+
+      #tableRight {
+		width: 40%;
+      }
+
+      #content {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+        margin-left: 30px;
+        font-size: 20px;
+      }
+
+      #contentRight {
+        margin-left: 200px;
+      }
+
+      .highlight{
+		display: none;
+        font-size: 20px;
+		margin: 20px;
+      }
+	  
+    </style>
+  </head>
+
+  <body> 
+
+    <div>
+      <table class="table-responsive" width="100%" id="tableHeight" >
+
+        <tr>
+
+          <td id="tableLeft">
+            <!--<img src="../post.png" class="img-responsive" alt="Responsive image">-->
+			<div style ="background-image: url('post.png')  width='300' ">職業百百種，哪一種最適合你呢？若能選得聰明、挑得適當，不但為人生加分，更可贏在事業前途的起跑點！即將舉辦大型演唱會的你，想給歌迷不一樣的驚喜，精心安排加碼演出，你覺得那個效果最好？</div>
+          </td>
+
+          <td id="tableWithBackground"> 
+              <div id="content">
+	          <form method="post" name="form_1" id="form_1">
+				<input type="radio" name="choice" value="1">A.真人魔術<br>
+                    <p class="highlight" id="1A">解答：你適合穩定且單純的職業，例如老師、公職人員、祕書、作家等，在安定自適的環境中更能使你發揮潛能，全力以赴就可以得到好成績。只是仍要提醒你，不可因為穩定就停下學習的腳步，才不容易被取代或淘汰。</p>
+				<input type="radio" name="choice" value="2">B.口技表演<br>
+                    <p class="highlight" id="2A">解答：你適合趣味性高的工作，你是個頭腦變通快、反應能力佳的古靈精，凡事很有自己的想法，喜歡在工作中追求生活價值，因此像是演員、明星、主持、導遊等較常與不同人接觸，能從中得到許多不同人生經驗的工作，你通常都可以擔任的非常稱職。</p>
+	            <input type="radio" name="choice" value="3">C.唯美芭蕾<br>
+                    <p class="highlight" id="3A">解答：你適合專業性高且跟美有關的行業，例如美容師、美髮師、化妝師、設計師、畫家、美編、攝影師等都很適合，因為你具有獨到眼光與審美天賦，常將工作視為精心特製的藝術品，只要用心琢磨發揮巧思，你的作品經常能令人驚艷不已。</p>
+				<input type="radio" name="choice" value="4">D.飛車特技<br>
+                    <p class="highlight" id="4A">解答：你適合變化性高的工作，你不喜歡一成不變的生活，當然也不喜歡枯燥死板的工作，你希望的職場是能提供足夠空間讓你盡情揮灑想像力與創造力的工作，例如行銷企劃；若條件成熟，按自己的嗜好經營自己的公司或小店，也是很好的選擇。</p>
+				<input type="radio" name="choice" value="5">E.火圈熱舞<br>
+                    <p class="highlight" id="5A">解答：你適合挑戰性高的工作，基本上你是個遇強則強的人，企圖心也很旺盛，唯有面對的工作難度愈高，努力征服之後的成就感及自我肯定也就愈高，當然獲利也相當可觀。所以像是可以挑戰高薪的業務人員或是風險較高的行業皆很適合你。</p>
+                <input type="button" value="確定" id="sure" onclick="showAnswer()">
+		</form>
+	      </div>
+          
+          </td>
+
+          <td id="tableRight">
+            <p id="contentRight">
+              <a href = "cause_title_5.html">
+                <img src = "next.png"class="img-responsive" alt = "Links">
+              </a>
+            </p>
+            
+          </td>
+
+        </tr>
+      </table>
+    </div>
+       
+    <script src="../js/jquery-3.1.1.slim.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
+
