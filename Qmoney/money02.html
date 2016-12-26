@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>money</title>
+    <title>Money</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="check.js"></script>
     <!-- Bootstrap -->
@@ -27,19 +27,22 @@
       }
 
       #tableLeft {
-	width: 30%;
+        background-image: url("04.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        width: 40%;
       }
 
       #tableWithBackground {
         background-image: url("clippaper.png");
         background-repeat:no-repeat;
         background-position:left top;
-	background-size:contain;
-	width: 30%;
+	background-size: 100% 100%;
+	width: 40%;
       }
 
       #tableRight {
-	width: 40%;
+	width: 10%;
       }
 
       #content {
@@ -67,45 +70,41 @@
 
   <body> 
 
-    <div>
-      <table class="table-responsive" width="100%" id="tableHeight" >
+    <div class="table-responsive">
+      <table id="tableHeight">
 
         <tr>
 
-         
-		  
-		  <td id="tableLeft">
+          <td id="tableLeft" width="40%" class="col-xs-12">
             <img src="10.png" class="img-responsive" alt="Responsive image">
-            
-			
           </td>
 
-          <td id="tableWithBackground"> 
-              <div id="content">
-	          <form method="post" name="form_1" id="form_1">
-		    <input type="radio" name="choice" value="1">A.��դj<br>
-                    <p class="highlight" id="1A">�Y��p�ӻ�դj�λ��l�@�j�@�p�A���ܦ��H�z�]�[�����D�A�@�ͯ}�Ѥ֦��A�@�Ѩ�߶]�T�I�b�A�̿𤭤Q���ᥲ�h�a�פ�C</p>
-		    <input type="radio" name="choice" value="2">B.��p���j<br>
-                    <p class="highlight" id="2A">��p���j�λ�G���ΪΡA���ܦ��H����W���@���A�@�ͦh���h�ѡA�]���J�w�A�Ҧh��֡C</p>
-	        <input type="radio" name="choice" value="3">C.����u�p<br>
-                    <p class="highlight" id="3A">��P�y�άۤ�L��u�p�̡A���ܦ��H�ɾE�o�i�����e�~�A�Y�n�ۦ�з~�A�h�p�ߤ��_������A���}�ѦʥX�A�߿��S�S�סC</p>
-		    <input type="radio" name="choice" value="4">D.�t�p�W�q<br>
-                    <p class="highlight" id="4A">��l�j�p�n�P�y�Τj�p���x�۰t�A�p���C�B���p�B�B���B�U���ӻ�D�`�׶����ܡA�j�Ѻ٬��t�p�W�q�A���ؤH(���רk�k)�A�D������E�ĥB���}�Ѥ����A�ר�H�k�ʤW�B�L�J�̧�O�F��C</p>
-		    <input type="radio" name="choice" value="5">E.�W�B���J<br>
-                    <p class="highlight" id="5A">��Y�L�p�A�[�H���ӯ��A���ܦ��H�@�ͨƷ~�h�i��Ӥ֦�ì�A�B�ѹB�M���d�����z�Q�A���L�W�B���J�̥i�y���ϦH�աC</p>
-		    
-                    <input type="button" value="�T�w" id="sure" onclick="showAnswer()">
+          <td id="tableWithBackground" width="40%" class="col-md-12"> 
+              <div id="content" class="embed-responsive embed-responsive-16by9">
+	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+		    <input type="radio" name="choice" value="1">A.鼻孔大<br>
+                    <p class="highlight" id="1A">若鼻小而鼻孔大或鼻翼一大一小，表示此人理財觀有問題，一生破敗少成，一天到晚跑三點半，最遲五十歲後必貧窮度日。</p>
+		    <input type="radio" name="choice" value="2">B.鼻小面大<br>
+                    <p class="highlight" id="2A">鼻小面大或鼻瘦面形肥，表示此人不能獨當一面，一生多成多敗，財難入庫，勞多獲少。</p>
+	            <input type="radio" name="choice" value="3">C.極其短小<br>
+                    <p class="highlight" id="3A">鼻與臉形相比過於短小者，表示此人升遷發展難有前途，若要自行創業，則如扶不起之阿斗，必破敗百出，賠錢又惹禍。</p>
+		    <input type="radio" name="choice" value="4">D.孤峰獨聳<br>
+                    <p class="highlight" id="4A">鼻子大小要與臉形大小五官相配，如顴低、面小、額平、頰失而鼻非常豐隆的話，古書稱為孤峰獨聳，此種人(不論男女)，非但不能聚斂且有破敗之虞，尤其以男性上唇無胡者更是靈驗。</p>
+		    <input type="radio" name="choice" value="5">E.上唇有胡<br>
+                    <p class="highlight" id="5A">鼻若過小再加人中細窄，表示此人一生事業多波折而少收穫，且敗運和健康都不理想，不過上唇有胡者可稍挽救劣勢。</p>
+		   
+                    <input type="button" value="確定" id="sure" onclick="showAnswer()">
 		</form>
 	      </div>
           
           </td>
 
-          <td id="tableRight">
+          <td id="tableRight" width="10%" class="col-md-12">
             <p id="contentRight">
               <a href = "money03.html">
                 <img src = "next.png"class="img-responsive" alt = "Links">
               </a>
-              
+       
             </p>
             
           </td>
