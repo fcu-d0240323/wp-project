@@ -27,19 +27,22 @@
       }
 
       #tableLeft {
-	width: 30%;
+        background-image: url("post.png");
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        width: 40%;
       }
 
       #tableWithBackground {
         background-image: url("clippaper.png");
         background-repeat:no-repeat;
         background-position:left top;
-	background-size:contain;
-	width: 30%;
+	background-size: 100% 100%;
+	width: 40%;
       }
 
       #tableRight {
-	width: 40%;
+	width: 10%;
       }
 
       #content {
@@ -67,18 +70,18 @@
 
   <body> 
 
-    <div>
-      <table class="table-responsive" width="100%" id="tableHeight" >
+    <div class="table-responsive">
+      <table id="tableHeight">
 
         <tr>
 
-          <td id="tableLeft">
-            <img src="post.png" class="img-responsive" alt="Responsive image">
+          <td id="tableLeft" width="40%" class="col-xs-12">
+            <!--<img src="post.png" class="img-responsive" alt="Responsive image">-->
           </td>
 
-          <td id="tableWithBackground"> 
-              <div id="content">
-	          <form method="post" name="form_1" id="form_1">
+          <td id="tableWithBackground" width="40%" class="col-md-12"> 
+              <div id="content" class="embed-responsive embed-responsive-16by9">
+	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
 		    <input type="radio" name="choice" value="1">A.選項名稱<br>
                     <p class="highlight" id="1A">解答</p>
 		    <input type="radio" name="choice" value="2">B.選項名稱<br>
@@ -97,10 +100,13 @@
           
           </td>
 
-          <td id="tableRight">
+          <td id="tableRight" width="10%" class="col-md-12">
             <p id="contentRight">
               <a href = "放下一頁Html">
                 <img src = "next.png"class="img-responsive" alt = "Links">
+              </a>
+              <a href = "放下一頁Html">
+                <img src = "home.png"class="img-responsive" alt = "Links">
               </a>
             </p>
             
