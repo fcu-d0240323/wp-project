@@ -26,6 +26,12 @@
 	background-color: red;
       }
 
+      #form_1 {
+        background-image: url(clippaper.png);
+        background-width: 100%;
+        background-height: auto;
+        background-repeat: no-repeat;
+      }
       #tableMiddle {
         background-image:url(clippaper.png);
         height:60px;
@@ -60,7 +66,7 @@
 
   <body> 
 
-    <div class="col-md-5 col-xs-12 id="tableLeft">
+    <div class="col-md-4 col-xs-12 id="tableLeft">
         <h1></h1>
         <h1></h1>
         <h1></h1>
@@ -68,34 +74,30 @@
         <img src="post.png" class="img-responsive" width="400" height="500"> 
     </div>
     
-    <div class="col-md-4 col-xs-12 id="tableMiddle" >
-      <form method="post" name="form_1" id="form_1" style="margin-top: 60px;">
-        <h1></h1>
-        <h1></h1>
-	<input type="radio" name="choice" value="1">A.選項名稱<br>
+    <div class="col-md-4 col-xs-12">
+      <form method="post" class="col-md-4 col-xs-12" name="form_1" id="form_1" style="width: 100%; height: 450px;">
+	<input type="radio" name="choice" value="1" style="margin-top: 90px; margin-left: 20px;">A.幹<br>
         <p class="highlight" id="1A">解答</p>
-	<input type="radio" name="choice" value="2">B.選項名稱<br>
+	<input type="radio" name="choice" value="2" style="margin-left: 20px;">B.選項名稱<br>
         <p class="highlight" id="2A">解答</p>
-	<input type="radio" name="choice" value="3">C.選項名稱<br>
+	<input type="radio" name="choice" value="3" style="margin-left: 20px;">C.選項名稱<br>
         <p class="highlight" id="3A">解答</p>
-	<input type="radio" name="choice" value="4">D.選項名稱<br>
+	<input type="radio" name="choice" value="4" style="margin-left: 20px;">D.選項名稱<br>
         <p class="highlight" id="4A">解答</p>
-	<input type="radio" name="choice" value="5">E.選項名稱<br>
+	<input type="radio" name="choice" value="5" style="margin-left: 20px;">E.選項名稱<br>
         <p class="highlight" id="5A">解答</p>
-	<input type="radio" name="choice" value="6">F.選項名稱<br>
+	<input type="radio" name="choice" value="6" style="margin-left: 20px;">F.選項名稱<br>
         <p class="highlight" id="6A">解答</p>
-        <input type="button" value="確定" id="sure" onclick="showAnswer()">
+        <input type="button" value="確定" id="sure" style="margin-left: 20px;" onclick="showAnswer()">
       </form>
     </div>            
     
-    <div>
+    <div class="col-md-2 col-xs-12>
             <p id="contentRight">
               <a href = "放下一頁Html">
                 <img src = "next.png"class="img-responsive" alt = "Links" width="200" height="200">
               </a>
-              <a href = "放下一頁Html">
-                <img src = "next.png"class="img-responsive" alt = "Links">
-              </a>
+
             </p>
     </div>
        
