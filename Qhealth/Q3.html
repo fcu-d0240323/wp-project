@@ -1,119 +1,54 @@
-<!DOCTYPE html>
-<html>
-
+ï»¿<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Health</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
     <script src="check.js"></script>
-    <!-- Bootstrap -->
-
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    
-    <style>
-      body {
-        background-image: url("pb.jpg");
-        background-position: center fixed;
-        background-size: cover;
-        height: 100%;
-      }
-
-      #tableHeight {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-
-      #tableLeft {
-        background-image: url("05.png");
-        background-repeat:no-repeat;
-        background-size: 100% 100%;
-        width: 40%;
-      }
-
-      #tableWithBackground {
-        background-image: url("clippaper.png");
-        background-repeat:no-repeat;
-        background-position:left top;
-	background-size: 100% 100%;
-	width: 40%;
-      }
-
-      #tableRight {
-	width: 10%;
-      }
-
-      #content {
-        margin-top: 60px;
-        margin-bottom: 10px;
-        margin-right: 40px;
-        margin-left: 30px;
-        font-size: 30px;
-      }
-
-      #contentRight {
-        margin-left: 200px;
-      }
-
-     .highlight{
-	display: none;
-        font-size: 20px;
-	margin: 20px;
-      }
-
-
-
-    </style>
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img src = "05.png" id="quest-img" alt = "Links">
+        </div>
 
-  <body> 
-
-    <div class="table-responsive">
-      <table id="tableHeight">
-
-        <tr>
-
-          <td id="tableLeft" width="40%" class="col-xs-12">
-            <!--<img src="post.png" class="img-responsive" alt="Responsive image">-->
-          </td>
-
-          <td id="tableWithBackground" width="40%" class="col-md-12"> 
-              <div id="content" class="embed-responsive embed-responsive-16by9">
-	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
-		    <input type="radio" name="choice" value="1">A.¤ì¥x<br>
-                    <p class="highlight" id="1A">§A²{¦b±¡ºü¤í¨Î¡A«Ü·Qµo¨cÄÌ¡A§A­Y¥­ÀR¦a¥Í¬¡¤@¬q®É¶¡¡A¬O¥i¦æ¤§ªk¡C</p>
-		    <input type="radio" name="choice" value="2">B.µ¡Ã®<br>
-                    <p class="highlight" id="2A">§A²{¦b¨ã¦³·²´µ©³¨½¯gª¬¡A©Î¬O§A¹ï²´«e¥Í¬¡µLªkº¡¨¬¡A§A³Ì¦nªQ¤@¤Uºò±i±¡ºü¡C</p>
-	            <input type="radio" name="choice" value="3">C.®à¡B´È<br>
-                    <p class="highlight" id="3A">§A²{¦b¥Rº¡¬¡¤O¡A¥Rº¡¾Äµo¦V¤Wªº±¡ºü¡C</p>
-		    <input type="radio" name="choice" value="4">D.§É<br>
-                    <p class="highlight" id="4A">§A²{¦b¦n¶H«Ü¯h­Â¡A¦Ó¥B«Ü·Q®ø°£§Aªº¯h³Ò¡A§AÀ³¸Ó¥h´²´²¤ß¡C</p>
-		    <input type="radio" name="choice" value="5">E.®ÑÃo<br>
-                    <p class="highlight" id="5A">§A²{¦b¨­¤ß§¡¦w¡A¥ô¦ó¨Æ±¡§¡¥i¥H§NÀR³B²z¡C</p>
-                    <input type="button" value="½T©w" id="sure" onclick="showAnswer()">
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+		    <input type="radio" name="choice" value="1">A.æœ¨å°<br>
+                    <p class="highlight" id="1A">ä½ ç¾åœ¨æƒ…ç·’æ¬ ä½³ï¼Œå¾ˆæƒ³ç™¼ç‰¢é¨·ï¼Œä½ è‹¥å¹³éœåœ°ç”Ÿæ´»ä¸€æ®µæ™‚é–“ï¼Œæ˜¯å¯è¡Œä¹‹æ³•ã€‚</p>
+		    <input type="radio" name="choice" value="2">B.çª—ç°¾<br>
+                    <p class="highlight" id="2A">ä½ ç¾åœ¨å…·æœ‰æ­‡æ–¯åº•é‡Œç—‡ç‹€ï¼Œæˆ–æ˜¯ä½ å°çœ¼å‰ç”Ÿæ´»ç„¡æ³•æ»¿è¶³ï¼Œä½ æœ€å¥½æ¾ä¸€ä¸‹ç·Šå¼µæƒ…ç·’ã€‚</p>
+	            <input type="radio" name="choice" value="3">C.æ¡Œã€æ¤…<br>
+                    <p class="highlight" id="3A">ä½ ç¾åœ¨å……æ»¿æ´»åŠ›ï¼Œå……æ»¿å¥®ç™¼å‘ä¸Šçš„æƒ…ç·’ã€‚</p>
+		    <input type="radio" name="choice" value="4">D.åºŠ<br>
+                    <p class="highlight" id="4A">ä½ ç¾åœ¨å¥½è±¡å¾ˆç–²å€¦ï¼Œè€Œä¸”å¾ˆæƒ³æ¶ˆé™¤ä½ çš„ç–²å‹ï¼Œä½ æ‡‰è©²å»æ•£æ•£å¿ƒã€‚</p>
+		    <input type="radio" name="choice" value="5">E.æ›¸æ«¥<br>
+                    <p class="highlight" id="5A">ä½ ç¾åœ¨èº«å¿ƒå‡å®‰ï¼Œä»»ä½•äº‹æƒ…å‡å¯ä»¥å†·éœè™•ç†ã€‚</p>
+                    <input type="button" value="ç¢ºå®š" id="sure" onclick="showAnswer()">
 		</form>
-	      </div>
-          
-          </td>
+          <img src = "../QWork/clippaper.png" id="quest-img" alt = "Links">
+        </div>
 
-          <td id="tableRight" width="10%" class="col-md-12">
-            <p id="contentRight">
+        <div class="col-sm-12 col-md-12 col-lg-3" id="next-btn">
               <a href = "Q4.html">
-                <img src = "next.png"class="img-responsive" alt = "Links">
+                <img src="../QWork/next.png" alt="Links">
               </a>
-
-            </p>
-            
-          </td>
-
-        </tr>
-      </table>
+        </div>
+      </div>
     </div>
-       
-    <script src="js/jquery-3.1.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
-
