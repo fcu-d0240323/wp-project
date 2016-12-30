@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
+    <script src="check.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img src = "01.png" id="quest-img" alt = "Links">
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+		    <input type="radio" name="choice" value="1">A.橘色<br>
+                    <p class="highlight" id="1A">最近健康狀況穩定，胃口很好，也頗有口福，不過美食往往熱量高，小心別吃太多以免發胖，同時養成定時運動的好習慣，大處著眼、小處著手，持之以恆的結果讓你的身體狀況都能維持在健康的標準之上。</p>
+		    <input type="radio" name="choice" value="2">B.綠色<br>
+                    <p class="highlight" id="2A">
+最近容易因為過勞使得身體不適，例如：頭暈、心悸、胸悶、沒食慾等，應儘量避免熬夜，該休息的時候就好好放鬆，有空時多到綠地公園走走，大口深呼吸，解除疲勞與緩和消極躁悶的情緒，別讓生活壓力成為健康負擔。</p>
+	            <input type="radio" name="choice" value="3">C.黑色<br>
+                    <p class="highlight" id="3A">雖然現在看起來是個健康寶寶，臉色佳、精神棒，不過可別仗著一時的「勇壯」而忽略掉了該有的保養，尤其是腎臟及排泄器官，更要特別注意，多喝水、不憋尿，保持良好而規律的生活作息，就能杜絕病魔上門。</p>
+		    <input type="radio" name="choice" value="4">D.藍色<br>
+                    <p class="highlight" id="4A">身體健康目前是沒什麼大礙，但是心理衛生可就得加強了，很容易陷入莫明的憂鬱中，或是因為環境或同伴的改變影響情緒，常為了莫名小事心煩失眠，長期下來，精神衰弱不說，心理影響生理，原本健康的身體也會被拖累。</p>
+		    <input type="radio" name="choice" value="5">E.紅色<br>
+                    <p class="highlight" id="5A">最近要多注意心血管方面的保養，別讓自己成為高血壓、高血糖、高血脂的三高危險群，粗茶淡飯不只是一種儉樸環保的生活方式，更是愛惜身體的養生方法，此外還要勤於運動，就算是散步爬樓梯也好，記住：多動多健康！</p>
+                    <input type="button" value="確定" id="sure" onclick="showAnswer()">
+		</form>
+          <img src = "../QWork/clippaper.png" id="quest-img" alt = "Links">
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-3" id="next-btn">
+              <a href = "Q2.html">
+                <img src="../QWork/next.png" alt="Links">
+              </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

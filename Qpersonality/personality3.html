@@ -1,131 +1,61 @@
-<!DOCTYPE html>
-<html>
-
+﻿<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Health</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
     <script src="check.js"></script>
-    <!-- Bootstrap -->
-
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    
-    <style>
-      body {
-        background-image: url("pb.jpg");
-        background-position: center fixed;
-        background-size: cover;
-        height: 100%;
-      }
-
-      #tableHeight {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-
-      #tableLeft {
-        background-image: url("personality3.png");
-        background-repeat:no-repeat;
-        background-size: 100% 100%;
-        width: 40%;
-      }
-
-      #tableWithBackground {
-        background-image: url("clippaper.png");
-        background-repeat:no-repeat;
-        background-position:left top;
-	background-size: 100% 100%;
-	width: 40%;
-      }
-
-      #tableRight {
-	width: 10%;
-      }
-
-      #content {
-        margin-top: 60px;
-        margin-bottom: 10px;
-        margin-right: 40px;
-        margin-left: 30px;
-        font-size: 30px;
-      }
-
-      #contentRight {
-        margin-left: 200px;
-      }
-
-     .highlight{
-	display: none;
-        font-size: 20px;
-	margin: 20px;
-      }
-
-
-
-    </style>
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img src = "personality3.png" id="quest-img" alt = "Links">
+        </div>
 
-  <body> 
-
-    <div class="table-responsive">
-      <table id="tableHeight">
-
-        <tr>
-
-          <td id="tableLeft" width="40%" class="col-xs-12">
-            <!--<img src="post.png" class="img-responsive" alt="Responsive image">-->
-          </td>
-
-          <td id="tableWithBackground" width="40%" class="col-md-12"> 
-              <div id="content" class="embed-responsive embed-responsive-16by9">
-	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
-		    <input type="radio" name="choice" value="1">A.���󥩧J�O<br>
-                    <p class="highlight" id="1A">�L��۹��ܭ��󥩧J�O���A�A�O�@�Ӹ۹�u�H���H�A���O�A�����I�]���O�]���o�ӡC
-					�ӹL�۹ꪺ�A�A���ɭԥi��|������ı���o�o�H�A�O�o�U���b����ܪ��ɭԭnhold���@�ǡA���N���ܪ��ޥ��@�I</p>
-		    <input type="radio" name="choice" value="2">B.���J�O�ܯ]�]<br>
-                    <p class="highlight" id="2A">�ө��ߧA�O�@�ө��ߪ��H�A�{�w�F�ۤv�Q�n�l�H���H�N�|���ߥ��N�����q�o�ӤH���n�D�C
-					�L�󩾸۪��A�A���ɭԫo�e���ݤ��M�H���u���ءA�q�Ӥ���@�ӿ��~���H�C�b���O�H���ƪ��ɭ԰O�o���ۤv�]�ߤ@�ө��u�A
-					�P�ɤ]�n�{�u��O�o�ӤH�O���O�u���ȱo�A�l�H�C
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+		    <input type="radio" name="choice" value="1">A.香草巧克力<br>
+                    <p class="highlight" id="1A">過於誠實選擇香草巧克力的你，是一個誠實守信的人，但是你的缺點也恰恰是因為這個。太過誠實的你，有時候可能會不知不覺的得罪人，記得下次在說實話的時候要hold住一些，註意講話的技巧哦！</p>
+		    <input type="radio" name="choice" value="2">B.巧克力脆珠珠<br>
+                    <p class="highlight" id="2A">
+太忠心你是一個忠心的人，認定了自己想要追隨的人就會全心全意的遵從這個人的要求。過於忠誠的你，有時候卻容易看不清人的真面目，從而支持一個錯誤的人。在幫別人做事的時候記得給自己設立一個底線，同時也要認真辨別這個人是不是真的值得你追隨。</p>
+	            <input type="radio" name="choice" value="3">C.姜餅曲奇<br>
+                    <p class="highlight" id="3A">太可愛你是一個人見人愛的人，性格隨和討人喜歡。這樣可愛的你，有時候即使認真起來，也會被人當做是在開玩笑。下次如果有人做了你不喜歡的事情，請記得一定要大膽告訴他們，這件事情對你來說很冒犯！</p>
+		    <input type="radio" name="choice" value="4">D.馬卡龍<br>
+                    <p class="highlight" id="4A">完美主義你是一個完美主義者，可能有時還有些輕微的強迫癥。細致入微是一件好事，但要是開始鉆牛角尖，有時候卻是會帶來壓力的。要記住，十全十美並不存在這個世界上，璞玉還會有瑕疵呢，不完美的完美可能才是最好的選擇。
 </p>
-	            <input type="radio" name="choice" value="3">C.���榱�_<br>
-                    <p class="highlight" id="3A">�ӥi�R�A�O�@�ӤH���H�R���H�A�ʮ��H�M�Q�H���w�C�o�˥i�R���A�A���ɭԧY�ϻ{�u�_�ӡA
-					�]�|�Q�H�����O�b�}�����C�U���p�G���H���F�A�����w���Ʊ��A�аO�o�@�w�n�j�x�i�D�L�̡A�o��Ʊ���A�ӻ��ܫ_�ǡI</p>
-		    <input type="radio" name="choice" value="4">D.���d�s<br>
-                    <p class="highlight" id="4A">�����D�q�A�O�@�ӧ����D�q�̡A�i�঳���٦��ǻ��L���j���p�C�ӭP�J�L�O�@��n�ơA���n�O�}
-					�l๤����y�A���ɭԫo�O�|�a�����O���C�n�O���A�Q���Q���ä��s�b�o�ӥ@�ɤW�A�\���ٷ|���岫�O�A�������������i��~�O�̦n����ܡC</p>
-		    <input type="radio" name="choice" value="5">E.�P�����l<br>
-                    <p class="highlight" id="5A">�Ѧn�H�A�O�@�Ө嫬�N�q�W���Ѧn�H�A�����o�ڵ��O�H���n�D�A�o���ɭԷ|���A�a�ӳ·СC�֩�U�H�O�@
-					��n�ơA�i�O�n�O���F���U�O�H�ӫj�j�ۤv�A���K�]�O�o���v�����C�O�o�ⴤ�n���U�O�H�����o�A���n�Q�H�����n�U�l�@�I
+		    <input type="radio" name="choice" value="5">E.燕麥提子<br>
+                    <p class="highlight" id="5A">老好人你是一個典型意義上的老好人，不懂得拒絕別人的要求，這有時候會給你帶來麻煩。樂於助人是一件好事，可是要是為了幫助別人而勉強自己，未免也是得不償失的。記得把握好幫助別人的分寸，不要被人當做軟柿子哦！
 </p>
-		    <input type="radio" name="choice" value="6">F.���o��ͻ氮<br>
-                    <p class="highlight" id="6A">�p���}����ܡA�A�b�A�B�ͪ������i���`���@�ǩ_�Ǫ��ߺD�C�A���O�@���@�N���ƧO�H���L���D�����H�A�`
-					�|���@�Ƿs�_���Q�k�Ʊ����t�@�Ѯ|�C���L�O��ߡA���O�o�˪��A�A�~���A���B�ͭ�ı�o�A�S�O���@�N�P�A�橹�C
-</p>
-                    <input type="button" value="�T�w" id="sure" onclick="showAnswer()">
+                    <input type="radio" name="choice" value="6">F.黃油花生餅乾<br>
+                    <p class="highlight" id="6A">小怪癖說實話，你在你朋友的眼里可能總有一些奇怪的習慣。你不是一個願意重複別人走過的道路的人，總會有一些新奇的想法希望能夠另辟蹊徑。不過別擔心，正是這樣的你，才讓你的朋友們覺得你特別而願意與你交往。</p>
+					
+					<input type="button" value="確定" id="sure" onclick="showAnswer()">
+		
 		</form>
-	      </div>
-          
-          </td>
+          <img src = "../QWork/clippaper.png" id="quest-img" alt = "Links">
+        </div>
 
-          <td id="tableRight" width="10%" class="col-md-12">
-            <p id="contentRight">
+        <div class="col-sm-12 col-md-12 col-lg-3" id="next-btn">
               <a href = "personality4.html">
-                <img src = "next.png"class="img-responsive" alt = "Links">
+                <img src="../QWork/next.png" alt="Links">
               </a>
-          
-            </p>
-            
-          </td>
-
-        </tr>
-      </table>
+        </div>
+      </div>
     </div>
-       
-    <script src="js/jquery-3.1.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
-

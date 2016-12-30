@@ -1,121 +1,59 @@
-<!DOCTYPE html>
-<html>
-
+﻿<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Health</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
     <script src="check.js"></script>
-    <!-- Bootstrap -->
-
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    
-    <style>
-      body {
-        background-image: url("pb.jpg");
-        background-position: center fixed;
-        background-size: cover;
-        height: 100%;
-      }
-
-      #tableHeight {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-
-      #tableLeft {
-        background-image: url("personality5.png");
-        background-repeat:no-repeat;
-        background-size: 100% 100%;
-        width: 40%;
-      }
-
-      #tableWithBackground {
-        background-image: url("clippaper.png");
-        background-repeat:no-repeat;
-        background-position:left top;
-	background-size: 100% 100%;
-	width: 40%;
-      }
-
-      #tableRight {
-	width: 10%;
-      }
-
-      #content {
-        margin-top: 60px;
-        margin-bottom: 10px;
-        margin-right: 40px;
-        margin-left: 30px;
-        font-size: 30px;
-      }
-
-      #contentRight {
-        margin-left: 200px;
-      }
-
-     .highlight{
-	display: none;
-        font-size: 20px;
-	margin: 20px;
-      }
-
-
-
-    </style>
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img src = "post.png" id="quest-img" alt = "Links">
+        </div>
 
-  <body> 
-
-    <div class="table-responsive">
-      <table id="tableHeight">
-
-        <tr>
-
-          <td id="tableLeft" width="40%" class="col-xs-12">
-            <!--<img src="post.png" class="img-responsive" alt="Responsive image">-->
-          </td>
-
-          <td id="tableWithBackground" width="40%" class="col-md-12"> 
-              <div id="content" class="embed-responsive embed-responsive-16by9">
-	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
-		    <input type="radio" name="choice" value="1">A.����L�s<br>
-                    <p class="highlight" id="1A">�A���ѤH�N�B�֩�U�H�B���w�I�X�C���o�U�ΧO�H�P�����A�A����}�x�O�H���Q�k�A�O�@�ӥi�a���B�͡C
-�A�����Ӱ��A����M���A�L�k�Ԩ���ժ��ͬ��A�p�G�S�����|���A�o���~��A�A���߸̷|�L�k�w�w�A�A����@�i���~���j�a�ݨ��A���~�ءC
-��󲧩ʨӻ��A�A���Ӥ���K�ܨ�l�ޤO�A���ʯS�O���w�A�o�I�C</p>
-		    <input type="radio" name="choice" value="2">B.����A�K����<br>
-                    <p class="highlight" id="2A">�A��ۤv�����諸�۫H�ߡA���F�Ϧۤv��[�P�����P�A����x���P�D���`�O���O�H�u�C���w���b�̫e�Y�A�ɨ��j�a�R���������C
-�A���޿��ҷ��j�B�o���D�W�A�J�Ʒ|���N�R�a���R�B��ҫ�A���M�w�A�֦��ۧڿW�S������C
-����R���A�A�ӷP�߲ӡA�ɮɴ����ۤv�Ӫ`�N�p�Ӹ`�A���O������a�H�A�|�J�ӰO�o���ߦn�A���򥼨Ӥ��C���ߡC</p>
-	            <input type="radio" name="choice" value="3">C.�����y�L¼�_<br>
-                    <p class="highlight" id="3A">�A�өʤ�������A�������R�S���߷Q�k�A�g�L�`����{��~�|�N�Ʊ��i�D�O�H�C
-�A���ܵ��}�A���ﭫ�����H�N�|�I�X�Ҧ��A��ݪB���`�O��ش��M�B���D�^���A�O�ӭȱo�H�઺�B�͡C
-����R���A�Y�K�J��ˤߪ��Ʊ��]�|�q�q�N���\���{�l�̧]�A���|�����b���H���e�ܮz�A���A�����H�n���@�ߡA�@�N�b�A�����q�q����A��������C</p>
-                    <input type="button" value="�T�w" id="sure" onclick="showAnswer()">
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+		    <input type="radio" name="choice" value="1">A.手指微彎<br>
+                    <p class="highlight" id="1A">你善解人意、樂於助人、喜歡付出。懂得顧及別人感受的你，善於洞悉別人的想法，是一個可靠的朋友。
+你的智商高，思維清晰，無法忍受單調的生活，如果沒有機會給你發揮才能，你的心裡會無法安定，你渴望一展長才讓大家看見你的才華。
+對於異性來說，你的細心體貼很具吸引力，異性特別喜歡你這點。</p>
+		    <input type="radio" name="choice" value="2">B.手指服貼鼠標<br>
+                    <p class="highlight" id="2A">
+你對自己有絕對的自信心，為了使自己更加與眾不同，面對困難與挑戰總是全力以赴。喜歡走在最前頭，享受大家崇拜的眼光。
+你的邏輯思考極強、聰明伶俐，遇事會先冷靜地分析、思考後再做決定，擁有自我獨特的風格。
+關於愛情，你敏感心細，時時提醒自己該注意小細節，像是面對對方家人，會仔細記得對方喜好，虜獲未來公婆的心。</p>
+	            <input type="radio" name="choice" value="3">C.食指稍微翹起<br>
+                    <p class="highlight" id="3A">你個性比較神秘，不輕易吐露內心想法，經過深思熟慮後才會將事情告訴別人。
+你其實很善良，面對重視的人就會付出所有，對待朋友總是兩肋插刀、不求回報，是個值得信賴的朋友。
+面對愛情，即便遇到傷心的事情也會默默將眼淚往肚子裡吞，不會輕易在情人面前示弱，當你的情人要有耐心，願意在你身旁默默陪伴，給予支持。
+</p>
+		   
+                    <input type="button" value="確定" id="sure" onclick="showAnswer()">
 		</form>
-	      </div>
-          
-          </td>
+          <img src = "../QWork/clippaper.png" id="quest-img" alt = "Links">
+        </div>
 
-          <td id="tableRight" width="10%" class="col-md-12">
-            <p id="contentRight">
+        <div class="col-sm-12 col-md-12 col-lg-3" id="next-btn">
               <a href = "../index.html">
-                <img src = "next.png"class="img-responsive" alt = "Links">
+                <img src="../QWork/next.png" alt="Links">
               </a>
-          
-            </p>
-            
-          </td>
-
-        </tr>
-      </table>
+        </div>
+      </div>
     </div>
-       
-    <script src="js/jquery-3.1.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
-
