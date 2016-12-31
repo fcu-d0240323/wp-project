@@ -1,130 +1,55 @@
-<!DOCTYPE html>
-<html>
-
+﻿<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Health</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
     <script src="check.js"></script>
-    <!-- Bootstrap -->
-
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    
-    <style>
-      body {
-        background-image: url("pb.jpg");
-        background-position: center fixed;
-        background-size: cover;
-        height: 100%;
-      }
-
-      #tableHeight {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-
-      #tableLeft {
-        background-image: url("personality1.png");
-        background-repeat:no-repeat;
-        background-size: 100% 100%;
-        width: 40%;
-      }
-
-      #tableWithBackground {
-        background-image: url("clippaper.png");
-        background-repeat:no-repeat;
-        background-position:left top;
-	background-size: 100% 100%;
-	width: 40%;
-      }
-
-      #tableRight {
-	width: 10%;
-      }
-
-      #content {
-        margin-top: 60px;
-        margin-bottom: 10px;
-        margin-right: 40px;
-        margin-left: 30px;
-        font-size: 30px;
-      }
-
-      #contentRight {
-        margin-left: 200px;
-      }
-
-     .highlight{
-	display: none;
-        font-size: 20px;
-	margin: 20px;
-      }
-
-
-
-    </style>
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img src = "personality1.png" id="quest-img" alt = "Links">
+        </div>
 
-  <body> 
-
-    <div class="table-responsive">
-      <table id="tableHeight">
-
-        <tr>
-
-          <td id="tableLeft" width="40%" class="col-xs-12">
-            <!--<img src="post.png" class="img-responsive" alt="Responsive image">-->
-          </td>
-
-          <td id="tableWithBackground" width="40%" class="col-md-12"> 
-              <div id="content" class="embed-responsive embed-responsive-16by9">
-	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
-		    <input type="radio" name="choice" value="1">A.�j��<br>
-                    <p class="highlight" id="1A">���ɧA�ܤֱN�߱����{�b�y�W�A�A�L�װ����Υͮ�A�~�b�u���{30%�A
-					�O�H�����q���A���߷N�C�����A�O�������������H�A���ɬݦ�í�w���A�A�i��b�����z�o�A���O�H
-					���I�����ұ��C����P���A�ܥD�ʡA�ݨ�߻����H�A�A�����󵥫ݡA�A�@�w�|�����ζ�������誾�D�A���߷N�C 
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+		    <input type="radio" name="choice" value="1">A.大笑<br>
+                    <p class="highlight" id="1A">平時你很少將心情表現在臉上，你無論高興或生氣，外在只表現30%，別人很難猜測你的心意。但其實你是很壓抑情緒的人，平時看似穩定的你，可能在瞬間爆發，讓別人有點不知所措。面對感情你很主動，看到心儀的人，你不善於等待，你一定會直接或間接讓對方知道你的心意。</p>
+		    <input type="radio" name="choice" value="2">B.跳起來<br>
+                    <p class="highlight" id="2A">你的心裡是悲是喜，都表現在臉上，你是一個無論高興或難過都藏不住的人，一點小事能讓你高興，也能讓你悲傷，但是你恢復得也快。另外，你很不會說謊，你說謊時的臉色一定異於平時，讓對方一眼就看穿，勸你還是誠實為上吧！ 
 </p>
-		    <input type="radio" name="choice" value="2">B.���_��<br>
-                    <p class="highlight" id="2A">�A���߸̬O�d�O�ߡA�����{�b�y�W�A�A�O�@�ӵL�װ��������L���ä�
-					�����H�A�@�I�p�Ư����A�����A�]�����A�d�ˡA���O�A��_�o�]�֡C�t�~�A�A�ܤ��|�����A�A����
-					�ɪ��y��@�w���󥭮ɡA�����@���N�ݬ�A�U�A�٬O�۹ꬰ�W�a�I 
+	            <input type="radio" name="choice" value="3">C.緊緊握住彩卷<br>
+                    <p class="highlight" id="3A">你是一個社交型的人物，在團體中，你把彼此的溝通與相處看得很重要，因此你人緣多半不錯。你同時注重自己的形象與談吐是否合宜，但你也不會隱藏自己的情緒，會找人來傾訴。你對金錢看得很重，小心別因為錢傷了朋友的和氣！ 
 </p>
-	            <input type="radio" name="choice" value="3">C.��򴤦��m��<br>
-                    <p class="highlight" id="3A">�A�O�@�Ӫ��櫬���H���A�b���餤�A�A�⩼�������q�P�۳B�ݱo�ܭ��n
-					�A�]���A�H�t�h�b�����C�A�P�ɪ`���ۤv���ζH�P�ͦR�O�_�X�y�A���A�]���|���æۤv�������A�|��H
-					�ӶɶD�C�A������ݱo�ܭ��A�p�ߧO�]�����ˤF�B�ͪ��M��I 
-
-</p>
-		    <input type="radio" name="choice" value="4">D.�b��,�S������ʧ@<br>
-                    <p class="highlight" id="4A">�A�O�@�ӱ����ƪ��H�A������o����n�ʡA���O�H�s�����J�I�A������o�t�W�A
-					�@�ӤH���B�H�s�~�C�A�������]�e���]���O�H���g��Ӱ����A�]���O�H�����צӫ���A�A�O�@�ӱӷP���H�C
-					�t�~�A�b�ʷR�譱�A�A���t�ʤW�@�Ӥ��R�A���H���ɦV�A�U�A���n�Ӧ���P����I</p>
-		 
-                    <input type="button" value="�T�w" id="sure" onclick="showAnswer()">
+		    <input type="radio" name="choice" value="4">D.呆住,沒有任何動作<br>
+                    <p class="highlight" id="4A">你是一個情緒化的人，有時顯得活潑好動，像是人群中的焦點，有時顯得孤獨，一個人身處人群外。你的情緒也容易因為別人的讚賞而高興，因為別人的評論而思索，你是一個敏感的人。另外，在戀愛方面，你有暗戀上一個不愛你的人的傾向，勸你不要太早放感情喔</p>
+		    
+                    <input type="button" value="確定" id="sure" onclick="showAnswer()">
 		</form>
-	      </div>
-          
-          </td>
+          <img src = "../QWork/clippaper.png" id="quest-img" alt = "Links">
+        </div>
 
-          <td id="tableRight" width="10%" class="col-md-12">
-            <p id="contentRight">
+        <div class="col-sm-12 col-md-12 col-lg-3" id="next-btn">
               <a href = "personality2.html">
-                <img src = "next.png"class="img-responsive" alt = "Links">
+                <img src="../QWork/next.png" alt="Links">
               </a>
-          
-            </p>
-            
-          </td>
-
-        </tr>
-      </table>
+        </div>
+      </div>
     </div>
-       
-    <script src="js/jquery-3.1.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
-

@@ -1,119 +1,54 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <title>Money</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
     <script src="check.js"></script>
-    <!-- Bootstrap -->
-
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    
-    <style>
-      body {
-        background-image: url("pb.jpg");
-        background-position: center fixed;
-        background-size: cover;
-        height: 100%;
-      }
-
-      #tableHeight {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-
-      #tableLeft {
-        background-image: url("04.png");
-        background-repeat:no-repeat;
-        background-size: 100% 100%;
-        width: 40%;
-      }
-
-      #tableWithBackground {
-        background-image: url("clippaper.png");
-        background-repeat:no-repeat;
-        background-position:left top;
-	background-size: 100% 100%;
-	width: 40%;
-      }
-
-      #tableRight {
-	width: 10%;
-      }
-
-      #content {
-        margin-top: 60px;
-        margin-bottom: 10px;
-        margin-right: 40px;
-        margin-left: 30px;
-        font-size: 30px;
-      }
-
-      #contentRight {
-        margin-left: 200px;
-      }
-
-     .highlight{
-	display: none;
-        font-size: 20px;
-	margin: 20px;
-      }
-
-
-
-    </style>
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img src = "11.png" id="quest-img" alt = "Links">
+        </div>
 
-  <body> 
-
-    <div class="table-responsive">
-      <table id="tableHeight">
-
-        <tr>
-
-          <td id="tableLeft" width="40%" class="col-xs-12">
-            <img src="11.png" class="img-responsive" alt="Responsive image">
-          </td>
-
-          <td id="tableWithBackground" width="40%" class="col-md-12"> 
-              <div id="content" class="embed-responsive embed-responsive-16by9">
-	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
 		    <input type="radio" name="choice" value="1">A.狗<br>
-                    <p class="highlight" id="1A">你的富翁潛力不足，但屬於那種大財沒有小財不斷的人。</p>
+				<p class="highlight" id="1A">你的富翁潛力不足，但屬於那種大財沒有小財不斷的人。</p>
 		    <input type="radio" name="choice" value="2">B.馬<br>
-                    <p class="highlight" id="2A">你的富翁潛力十足，財源滾滾來，簡直是未來的大財主。</p>
-	            <input type="radio" name="choice" value="3">C.兔子<br>
-                    <p class="highlight" id="3A">你一點富翁潛力都沒有，“勞苦”二字將是你人生的主題。</p>
+				<p class="highlight" id="2A">你的富翁潛力十足，財源滾滾來，簡直是未來的大財主。</p>
+	        <input type="radio" name="choice" value="3">C.兔<br>
+				<p class="highlight" id="3A">你一點富翁潛力都沒有，“勞苦”二字將是你人生的主題。</p>
 		    <input type="radio" name="choice" value="4">D.羊<br>
-                    <p class="highlight" id="4A">你有成為富翁的潛力，但與B不同的是，你需要更多的努力。</p>
+                <p class="highlight" id="4A">你有成為富翁的潛力，但與B不同的是，你需要更多的努力。</p>
 		   
-		   
-                    <input type="button" value="確定" id="sure" onclick="showAnswer()">
+			
+            <input type="button" value="確定" id="sure" onclick="showAnswer()">
 		</form>
-	      </div>
-          
-          </td>
+          <img src = "../QWork/clippaper.png" id="quest-img" alt = "Links">
+        </div>
 
-          <td id="tableRight" width="10%" class="col-md-12">
-            <p id="contentRight">
+        <div class="col-sm-12 col-md-12 col-lg-3" id="next-btn">
               <a href = "..\index.html">
-                <img src = "next.png"class="img-responsive" alt = "Links">
+                <img src="../QWork/next.png" alt="Links">
               </a>
-       
-            </p>
-            
-          </td>
-
-        </tr>
-      </table>
+        </div>
+      </div>
     </div>
-       
-    <script src="js/jquery-3.1.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
-
