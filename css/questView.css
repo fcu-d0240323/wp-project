@@ -6,9 +6,7 @@ html {
 
 body {
   background-image: url('../QWork/pb2.jpg');
-  /*background-position: center fixed;*/
   background-position: fixed;
-  /*background-size: cover;*/
   height: 100%;
 }
 
@@ -48,6 +46,8 @@ body {
 #next-btn {
   display: inline-block;
 }
+
+/* Apply only when viewport over 1200px */
 
 @media screen and (min-width: 1200px) {
   #quest-note-wrapper {
