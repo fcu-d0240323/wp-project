@@ -1,123 +1,117 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>Health</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="check.js"></script>
-    <!-- Bootstrap -->
+    <head>
+        <title>Health</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="check.js"></script>
+        <!-- Bootstrap -->
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    
-    <style>
-      body {
-        background-image: url("pb.jpg");
-        background-position: center fixed;
-        background-size: cover;
-        height: 100%;
-      }
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 
-      #tableHeight {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
+        <style>
+            body {
+                background-image: url("pb.jpg");
+                background-position: center fixed;
+                background-size: cover;
+                height: 100%;
+            }
 
-      #tableLeft {
-        background-image: url("post.png");
-        background-repeat:no-repeat;
-        background-size: 100% 100%;
-        width: 40%;
-      }
+            #tableHeight {
+                height: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
 
-      #tableWithBackground {
-        background-image: url("clippaper.png");
-        background-repeat:no-repeat;
-        background-position:left top;
-	background-size: 100% 100%;
-	width: 40%;
-      }
+            #tableLeft {
+                background-image: url("post.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                width: 40%;
+            }
 
-      #tableRight {
-	width: 10%;
-      }
+            #tableWithBackground {
+                background-image: url("clippaper.png");
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-size: 100% 100%;
+                width: 40%;
+            }
 
-      #content {
-        margin-top: 60px;
-        margin-bottom: 10px;
-        margin-right: 40px;
-        margin-left: 30px;
-        font-size: 30px;
-      }
+            #tableRight {
+                width: 10%;
+            }
 
-      #contentRight {
-        margin-left: 200px;
-      }
+            #content {
+                margin: 60px 40px 10px 30px;
+                font-size: 30px;
+            }
 
-     .highlight{
-	display: none;
-        font-size: 20px;
-	margin: 20px;
-      }
+            #contentRight {
+                margin-left: 200px;
+            }
 
+            .highlight {
+                display: none;
+                font-size: 20px;
+                margin: 20px;
+            }
 
+        </style>
+    </head>
 
-    </style>
-  </head>
+    <body>
 
-  <body> 
+        <div class="table-responsive">
+            <table id="tableHeight">
 
-    <div class="table-responsive">
-      <table id="tableHeight">
+                <tr>
 
-        <tr>
+                    <td id="tableLeft" width="40%" class="col-xs-12">
+                        <!--<img src="post.png" class="img-responsive" alt="Responsive image">-->
+                    </td>
 
-          <td id="tableLeft" width="40%" class="col-xs-12">
-            <!--<img src="post.png" class="img-responsive" alt="Responsive image">-->
-          </td>
+                    <td id="tableWithBackground" width="40%" class="col-md-12">
+                        <div id="content" class="embed-responsive embed-responsive-16by9">
+                            <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
+                                <input type="radio" name="choice" value="1">A.ï¿½ï¶µï¿½Wï¿½ï¿½<br>
+                                <p class="highlight" id="1A">ï¿½Ñµï¿½</p>
+                                <input type="radio" name="choice" value="2">B.ï¿½ï¶µï¿½Wï¿½ï¿½<br>
+                                <p class="highlight" id="2A">ï¿½Ñµï¿½</p>
+                                <input type="radio" name="choice" value="3">C.ï¿½ï¶µï¿½Wï¿½ï¿½<br>
+                                <p class="highlight" id="3A">ï¿½Ñµï¿½</p>
+                                <input type="radio" name="choice" value="4">D.ï¿½ï¶µï¿½Wï¿½ï¿½<br>
+                                <p class="highlight" id="4A">ï¿½Ñµï¿½</p>
+                                <input type="radio" name="choice" value="5">E.ï¿½ï¶µï¿½Wï¿½ï¿½<br>
+                                <p class="highlight" id="5A">ï¿½Ñµï¿½</p>
+                                <input type="radio" name="choice" value="6">F.ï¿½ï¶µï¿½Wï¿½ï¿½<br>
+                                <p class="highlight" id="6A">ï¿½Ñµï¿½</p>
+                                <input type="button" value="ï¿½Tï¿½w" id="sure" onclick="showAnswer()">
+                            </form>
+                        </div>
 
-          <td id="tableWithBackground" width="40%" class="col-md-12"> 
-              <div id="content" class="embed-responsive embed-responsive-16by9">
-	          <form method="post" name="form_1" id="form_1" class="embed-responsive-item">
-		    <input type="radio" name="choice" value="1">A.¿ï¶µ¦WºÙ<br>
-                    <p class="highlight" id="1A">¸Ñµª</p>
-		    <input type="radio" name="choice" value="2">B.¿ï¶µ¦WºÙ<br>
-                    <p class="highlight" id="2A">¸Ñµª</p>
-	            <input type="radio" name="choice" value="3">C.¿ï¶µ¦WºÙ<br>
-                    <p class="highlight" id="3A">¸Ñµª</p>
-		    <input type="radio" name="choice" value="4">D.¿ï¶µ¦WºÙ<br>
-                    <p class="highlight" id="4A">¸Ñµª</p>
-		    <input type="radio" name="choice" value="5">E.¿ï¶µ¦WºÙ<br>
-                    <p class="highlight" id="5A">¸Ñµª</p>
-		    <input type="radio" name="choice" value="6">F.¿ï¶µ¦WºÙ<br>
-                    <p class="highlight" id="6A">¸Ñµª</p>
-                    <input type="button" value="½T©w" id="sure" onclick="showAnswer()">
-		</form>
-	      </div>
-          
-          </td>
+                    </td>
 
-          <td id="tableRight" width="10%" class="col-md-12">
-            <p id="contentRight">
-              <a href = "©ñ¤U¤@­¶Html">
-                <img src = "next.png"class="img-responsive" alt = "Links">
-              </a>
-              <a href = "©ñ¤U¤@­¶Html">
-                <img src = "home.png"class="img-responsive" alt = "Links">
-              </a>
-            </p>
-            
-          </td>
+                    <td id="tableRight" width="10%" class="col-md-12">
+                        <p id="contentRight">
+                            <a href="ï¿½ï¿½ï¿½Uï¿½@ï¿½ï¿½Html">
+                                <img src="next.png" class="img-responsive" alt="Links">
+                            </a>
+                            <a href="ï¿½ï¿½ï¿½Uï¿½@ï¿½ï¿½Html">
+                                <img src="home.png" class="img-responsive" alt="Links">
+                            </a>
+                        </p>
 
-        </tr>
-      </table>
-    </div>
-       
-    <script src="js/jquery-3.1.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+        <script src="js/jquery-3.1.1.slim.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>
-

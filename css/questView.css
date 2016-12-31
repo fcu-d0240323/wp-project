@@ -1,26 +1,75 @@
-body {
-  background-image: url('../QWork/pb.jpg');
-  background-position: center fixed;
-  background-size: cover;
+/* Apply Globaly */
+
+html {
   height: 100%;
 }
 
-.highlight {
-  display: none;
+body {
+  background-image: url('../QWork/pb2.jpg');
+  /*background-position: center fixed;*/
+  background-position: fixed;
+  /*background-size: cover;*/
+  height: 100%;
 }
 
-#quest-img {
-    width: 100%;
+#quest-warp {
+  height: 100%;
 }
 
-#next-btn {
-    margin: auto;
-    text-align: center;
+.full-width {
+  width: 100%;
+}
+
+/* Apply only on quest form */
+
+#quest-form-wrapper {
+  height: auto;
+  overflow: hidden;
 }
 
 #quest-form {
   position: absolute;
   top:15%;
   left: 15%;
+  width: 75%;
   font-size: 2em;
+}
+
+.hide {
+  display: none;
+}
+
+/* Apply only on quest next button */
+
+#next-btn-wrapper {
+  text-align: center;
+}
+
+#next-btn {
+  display: inline-block;
+}
+
+@media screen and (min-width: 1200px) {
+  #quest-note-wrapper {
+    height: 100%;
+  }
+
+  #quest-note {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #next-btn-wrapper {
+    height: 100%;
+  }
+
+  #next-btn {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

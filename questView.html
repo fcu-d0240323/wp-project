@@ -16,34 +16,62 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <img src = "QWork/post.png" id="quest-img" alt = "Links">
-        </div>
+    <div class="container-fluid" id="quest-warp">
+      <div class="col-sm-12 col-md-6 col-lg-4"  id="quest-note-wrapper">
+        <img src = "QWork/post.png" class="full-width" id="quest-note">
+      </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-5">
-          <form method="post" name="form_1" id="quest-form" class="embed-responsive-item">
-            <input type="radio" name="choice" value="1">A.選項名稱<br>
-            <p class="highlight" id="1A">解答</p>
-            <input type="radio" name="choice" value="2">B.選項名稱<br>
-            <p class="highlight" id="2A">解答</p>
-            <input type="radio" name="choice" value="3">C.選項名稱<br>
-            <p class="highlight" id="3A">解答</p>
-            <input type="radio" name="choice" value="4">D.選項名稱<br>
-            <p class="highlight" id="4A">解答</p>
-            <input type="radio" name="choice" value="5">E.選項名稱<br>
-            <p class="highlight" id="5A">解答</p>
-            <input type="radio" name="choice" value="6">F.選項名稱<br>
-            <p class="highlight" id="6A">解答</p>
-            <input class="btn btn-default" type="submit" value="確定" id="sure" onclick="showAnswer()">
-          </form>
-          <img src = "QWork/clippaper.png" id="quest-img" alt = "Links">
-        </div>
+      <div class="col-sm-12 col-md-6 col-lg-5" id="quest-form-wrapper">
+        <form method="post" name="form_1" class="embed-responsive-item full-width" id="quest-form">
+          <div class="radio">
+            <label>
+              <input type="radio" name="choice" value="1">
+              A.選項名稱
+              <p class="hide" id="1A">解答</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="choice" value="2">
+              B.選項名稱
+              <p class="hide" id="2A">解答</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="choice" value="3">
+              C.選項名稱
+              <p class="hide" id="3A">解答</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="choice" value="4">
+              D.選項名稱
+              <p class="hide" id="4A">解答</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="choice" value="5">
+              E.選項名稱
+              <p class="hide" id="5A">解答</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="choice" value="6">
+              F.選項名稱
+              <p class="hide" id="6A">解答</p>
+            </label>
+          </div>
+          <input class="btn btn-default" type="submit" value="確定" id="sure" onclick="showAnswer()">
+        </form>
+        <img src = "QWork/clippaper.png" class="full-width" alt ="Clipboard">
+      </div>
 
-        <div class="col-sm-12 col-md-12 col-lg-3" id="next-btn">
-          <img src="QWork/next.png" alt="Links">
-        </div>
+      <div class="col-sm-12 col-md-12 col-lg-3 index-part" id="next-btn-wrapper">
+        <img src="QWork/next.png" alt="Next Quest" id="next-btn">
       </div>
     </div>
 
