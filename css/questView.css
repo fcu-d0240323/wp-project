@@ -29,12 +29,14 @@ body {
   position: absolute;
   top:15%;
   left: 15%;
-  width: 75%;
+  width: 70%;
   font-size: 2em;
 }
 
-.hide {
-  display: none;
+.quest-answer {
+  border-left: 3px solid #FF6600;
+  padding-left: 0.5em;
+  margin-left: 5px;
 }
 
 /* Apply only on quest next button */
