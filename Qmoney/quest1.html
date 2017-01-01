@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid" id="quest-warp">
+      <div class="col-sm-12 col-md-6 col-lg-4"  id="quest-note-wrapper">
+        <img src = "post1.png" class="full-width" id="quest-note">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-5" id="quest-form-wrapper">
+        <form method="post" class="embed-responsive-item full-width" id="quest-form">
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q1" value="1">
+              標準三房兩廳
+              <p class="quest-answer">
+                <small class="hide" id="A1">
+                  你老實穩重，絕不輕易奢侈浪費，深知錢財的寶貴，但這樣很容易被別人視為守財奴，還是建議你該花錢的時候不要手軟，否則會招來不必要的損失。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q2" value="2">
+              單人獨立空間
+              <p class="quest-answer">
+                <small class="hide" id="A2">
+                  表面上看你是個不大節儉的人，但實際上大家都看錯了，你對金錢的運用非常有條理，也極為理智，往往讓人在不知不覺中見到你拿出一大筆錢。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q3" value="3">
+              舒適的等面積房間
+              <p class="quest-answer">
+                <small class="hide" id="A3">
+                  你對於金錢極為敏銳，懂得理財，賺錢能力也很豐富，特別喜歡用股票、獎券等來賺大筆的意外之財。如果你能留心積財，你的財產會像滾雪球般愈滾愈大。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q4" value="4">
+              座北朝南、風水佳
+              <p class="quest-answer">
+                <small class="hide" id="A4">
+                  你是個一心一意想賺大錢的人，但往往因此而失去許多機會，別忘了那句老話：“心急吃不了熱豆腐”，路還是需要踏踏實實的走。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q5" value="5">
+              二人世界的溫馨小窩
+              <p class="quest-answer">
+                <small class="hide" id="A5">
+                  你的金錢座右銘是——錢是用來花的，不是用來存的，因此，對於你想要的東西，一定非買不可。不過，這樣花錢很容易上癮，奉勸你還是適當的克制一下。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q6" value="6">
+              二人世界的溫馨小窩
+              <p class="quest-answer">
+                <small class="hide" id="A6">
+                  你沒有明確的金錢觀，只有在需要用錢時，才偶而感覺到錢的重要性，在這種惰性作用下，你很容易走上借錢度日的不歸路。
+                </small>
+              </p>
+            </label>
+          </div>
+          <input class="btn btn-default full-width" value="確定" id="sure" onclick="showAnswer()">
+        </form>
+        <img src = "../QWork/clippaper.png" class="full-width" alt ="Clipboard">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3 index-part" id="next-btn-wrapper">
+        <a href="quest2.html">
+          <img src="../QWork/next.png" alt="Next Quest" id="next-btn">
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/showAns.js"></script>
+  </body>
+</html>
