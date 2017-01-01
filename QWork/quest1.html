@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid" id="quest-warp">
+      <div class="col-sm-12 col-md-6 col-lg-4"  id="quest-note-wrapper">
+        <img src = "post1.png" class="full-width" id="quest-note">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-5" id="quest-form-wrapper">
+        <form method="post" class="embed-responsive-item full-width" id="quest-form">
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q1" value="1">
+              同學
+              <p class="quest-answer">
+                <small class="hide" id="A1">
+                  你在找工作的過程中，還有非常大的進步空間，也代表了你目前的求職態度並不積極，有一搭沒一搭的找，當然不容易成功，唯有下定決心、充滿自信的時候，做足了準備，熟悉即將投入的行業，錄取的機會便可增加。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q2" value="2">
+              親戚
+              <p class="quest-answer">
+                <small class="hide" id="A2">
+                  雖然透過親友介紹，你可以得到不少應徵機會，不過找工作跟談感情一樣寧缺勿濫！目前出現的工作機會並沒有很適合你，你當然有機會試試看，但結果往往沒有想像中順利，建議你多看多聽，從眾多的職缺中過濾挑選出真正適合的。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q3" value="3">
+              工作人員
+              <p class="quest-answer">
+                <small class="hide" id="A3">
+                  求職成功機率非常高！現在可以找到還不錯的工作，過程也挺順利的。簡單來說，你缺的並不是機會；相反的，能做的事情很多，你必須從中挑選一個自己真正想做的工作，那麼才能在工作中發現樂趣並獲得成就感！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q4" value="4">
+              舊同事
+              <p class="quest-answer">
+                <small class="hide" id="A4">
+                  求職碰壁情況頗多！建議你專注於當下，別再受到過去經驗的影響而畫地自限，應該換個角度想，現在所面臨的挑戰都是對自我能力的考驗，如果你能夠臨危不亂、應對得宜，反而會讓你受到重視而被錄取！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q5" value="5">
+              前主管
+              <p class="quest-answer">
+                <small class="hide" id="A5">
+                  求職成功指數偏低！天時地利人和是求職成功的必要條件，可惜目前的你還沒有這股優勢，建議不妨先停下找工作的腳步，重新自我檢視，精進原有的專業技能，最好能考取證書證照，也可培養新興趣，增加競爭力，對往後求職大有幫助。
+                </small>
+              </p>
+            </label>
+          </div>
+          <input class="btn btn-default full-width" value="確定" id="sure" onclick="showAnswer()">
+        </form>
+        <img src = "../QWork/clippaper.png" class="full-width" alt ="Clipboard">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3 index-part" id="next-btn-wrapper">
+        <a href="quest2.html">
+          <img src="../QWork/next.png" alt="Next Quest" id="next-btn">
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/showAns.js"></script>
+  </body>
+</html>

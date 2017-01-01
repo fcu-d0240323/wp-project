@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid" id="quest-warp">
+      <div class="col-sm-12 col-md-6 col-lg-4"  id="quest-note-wrapper">
+        <img src = "post3.png" class="full-width" id="quest-note">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-5" id="quest-form-wrapper">
+        <form method="post" class="embed-responsive-item full-width" id="quest-form">
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q1" value="1">
+              狂吃東西
+              <p class="quest-answer">
+                <small class="hide" id="A1">
+                  瞎忙指數20分！在別人眼裡，你總是可以好整以暇、按部就班地完成每項事情，其實你沒輕鬆到哪去，只是善於調整情緒、自我安撫，也可以說是苦中作樂，儘可能按表操課，達到預定的績效，不容易瞎忙，但是撐得還滿辛苦的。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q2" value="2">
+              當點播 DJ
+              <p class="quest-answer">
+                <small class="hide" id="A2">
+                  瞎忙指數40分！你的忙碌都是有目的的，連瞎忙也不例外！例如處理無聊瑣事或是對規律生活感到厭倦時，便會不知不覺地瞎忙起來，看看是否能在無意義的瞎忙中放鬆心情，重新面對忙碌的一切，藉以重燃職場熱情、找回工作動力。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q3" value="3">
+              伴舞人員
+              <p class="quest-answer">
+                <small class="hide" id="A3">
+                  瞎忙指數80分！你很容易瞎忙，不知所為何來的忙，就算沒有你的事，你也跟著攪和一番，這便是自制力的欠缺了。瞎忙不只浪費時間，更磋跎生命，做任何事前最好先評估勝任與否，以免勞心勞力卻白忙一場。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q4" value="4">
+              K 歌之王
+              <p class="quest-answer">
+                <small class="hide" id="A4">
+                  瞎忙指數0分！你是個很有計畫的人，無論工作或生活，總是可以拿捏時間、安排妥當，在忙碌與玩樂之間取得平衡，不影響表現，尤其身邊不少貴人助，隨時提點、破解盲點，降低你的瞎忙指數，讓你每分每秒都不瞎過！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q5" value="5">
+              稱職的分母
+              <p class="quest-answer">
+                <small class="hide" id="A5">
+                  瞎忙指數60分！你的瞎忙來自於「隨心所欲」想到什麼就做什麼，乍看很有衝勁與效率，但若無一套完整計畫，實則亂無章法，容易半途而廢。要是有了初步構想，就應該落實規劃，把衝勁發揮在對的地方，才不會一直瞎忙下去啊！
+                </small>
+              </p>
+            </label>
+          </div>
+          <input class="btn btn-default full-width" value="確定" id="sure" onclick="showAnswer()">
+        </form>
+        <img src = "../QWork/clippaper.png" class="full-width" alt ="Clipboard">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3 index-part" id="next-btn-wrapper">
+        <a href="quest4.html">
+          <img src="../QWork/next.png" alt="Next Quest" id="next-btn">
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/showAns.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid" id="quest-warp">
+      <div class="col-sm-12 col-md-6 col-lg-4"  id="quest-note-wrapper">
+        <img src = "post4.png" class="full-width" id="quest-note">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-5" id="quest-form-wrapper">
+        <form method="post" class="embed-responsive-item full-width" id="quest-form">
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q1" value="1">
+              真人魔術
+              <p class="quest-answer">
+                <small class="hide" id="A1">
+                  你適合穩定且單純的職業，例如老師、公職人員、祕書、作家等，在安定自適的環境中更能使你發揮潛能，全力以赴就可以得到好成績。只是仍要提醒你，不可因為穩定就停下學習的腳步，才不容易被取代或淘汰。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q2" value="2">
+              口技表演
+              <p class="quest-answer">
+                <small class="hide" id="A2">
+                  你適合趣味性高的工作，你是個頭腦變通快、反應能力佳的古靈精，凡事很有自己的想法，喜歡在工作中追求生活價值，因此像是演員、明星、主持、導遊等較常與不同人接觸，能從中得到許多不同人生經驗的工作，你通常都可以擔任的非常稱職。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q3" value="3">
+              唯美芭蕾
+              <p class="quest-answer">
+                <small class="hide" id="A3">
+                  你適合專業性高且跟美有關的行業，例如美容師、美髮師、化妝師、設計師、畫家、美編、攝影師等都很適合，因為你具有獨到眼光與審美天賦，常將工作視為精心特製的藝術品，只要用心琢磨發揮巧思，你的作品經常能令人驚艷不已。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q4" value="4">
+              飛車特技
+              <p class="quest-answer">
+                <small class="hide" id="A4">
+                  你適合變化性高的工作，你不喜歡一成不變的生活，當然也不喜歡枯燥死板的工作，你希望的職場是能提供足夠空間讓你盡情揮灑想像力與創造力的工作，例如行銷企劃；若條件成熟，按自己的嗜好經營自己的公司或小店，也是很好的選擇。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q5" value="5">
+              火圈熱舞
+              <p class="quest-answer">
+                <small class="hide" id="A5">
+                  你適合挑戰性高的工作，基本上你是個遇強則強的人，企圖心也很旺盛，唯有面對的工作難度愈高，努力征服之後的成就感及自我肯定也就愈高，當然獲利也相當可觀。所以像是可以挑戰高薪的業務人員或是風險較高的行業皆很適合你。
+                </small>
+              </p>
+            </label>
+          </div>
+          <input class="btn btn-default full-width" value="確定" id="sure" onclick="showAnswer()">
+        </form>
+        <img src = "../QWork/clippaper.png" class="full-width" alt ="Clipboard">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3 index-part" id="next-btn-wrapper">
+        <a href="quest4.html">
+          <img src="../QWork/next.png" alt="Next Quest" id="next-btn">
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/showAns.js"></script>
+  </body>
+</html>
