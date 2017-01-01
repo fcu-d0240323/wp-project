@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid" id="quest-warp">
+      <div class="col-sm-12 col-md-6 col-lg-4"  id="quest-note-wrapper">
+        <img src = "post3.png" class="full-width" id="quest-note">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-5" id="quest-form-wrapper">
+        <form method="post" class="embed-responsive-item full-width" id="quest-form">
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q1" value="1">
+              A.112
+              <p class="quest-answer">
+                <small class="hide" id="A1">
+                  你選擇的是112，幸運之神眷顧指數20分。代表你在工作上的薪水一直都比較低，待遇不如他人，在工作量上，也都比別人還要多，所得更是不如預期，建議你此時就是多多忍耐囉！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q2" value="2">
+              B.377
+              <p class="quest-answer">
+                <small class="hide" id="A2">
+                  你選擇的是377，幸運之神眷顧指數60分。最近這一個禮拜，經常會有人請吃飯，大部分是人家為了感激你，或因為你的身分、地位給你的奉承，所以選到377的人也代表你的地位在這一週是扶搖直上的喔！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q3" value="3">
+              C.517
+              <p class="quest-answer">
+                <small class="hide" id="A3">
+                  你選擇的是517，幸運之神眷顧指數80分。代表你的感情將再次升溫，有關男女間的戀情會很甜蜜如意；此外，你若在團體或單位中，也代表你的心情是會非常開心的喔！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q4" value="4">
+              D.358
+              <p class="quest-answer">
+                <small class="hide" id="A4">
+                  你選擇的是358，幸運之神眷顧指數40分。代表在投資方面是先得財後破財的徵象，建議你在這段時間先守住正財就好，不要有其他非分之想，更不要亂投資，這樣就不會有破財了！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q5" value="5">
+              E.143
+              <p class="quest-answer">
+                <small class="hide" id="A5">
+                  你選擇的是143，幸運之神眷顧指數100分。代表在這一週財運特別地好，人緣也超好喔！
+                </small>
+              </p>
+            </label>
+          </div>
+          <input class="btn btn-default full-width" value="確定" id="sure" onclick="showAnswer()">
+        </form>
+        <img src = "../QWork/clippaper.png" class="full-width" alt ="Clipboard">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3 index-part" id="next-btn-wrapper">
+        <a href="quest1.html">
+          <img src="../QWork/next.png" alt="Next Quest" id="next-btn">
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/showAns.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid" id="quest-warp">
+      <div class="col-sm-12 col-md-6 col-lg-4"  id="quest-note-wrapper">
+        <img src = "post1.png" class="full-width" id="quest-note">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-5" id="quest-form-wrapper">
+        <form method="post" class="embed-responsive-item full-width" id="quest-form">
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q1" value="1">
+              數字 1
+              <p class="quest-answer">
+                <small class="hide" id="A1">
+                  數字1，開春好運80分，若你在過年前有什麼官司的話，今年新春後將有機會平反，正義終將到來喔！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q2" value="2">
+              數字 2
+              <p class="quest-answer">
+                <small class="hide" id="A2">
+                  數字2，開春好運60分，想要桃花就有桃花，情慾方面會有相當不錯的好運氣！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q3" value="3">
+              數字 3
+              <p class="quest-answer">
+                <small class="hide" id="A3">
+                  數字3，開春好運100分，事業、人際關係方面都能有好運，恭喜你囉！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q4" value="4">
+              數字 4
+              <p class="quest-answer">
+                <small class="hide" id="A4">
+                  數字4，開春好運20分，代表你心思單純，所以會不小心錯過好運，提醒你過年期間要更謹慎一些，免得有些損失發生！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q5" value="5">
+              數字 5
+              <p class="quest-answer">
+                <small class="hide" id="A5">
+                  數字5，開春好運40分，代表著友誼方面的好運，所以在新春期間會有朋友打電話來，更有機會遇到或聯絡到以前的國、高中 同學。
+                </small>
+              </p>
+            </label>
+          </div>
+          <input class="btn btn-default full-width" value="確定" id="sure" onclick="showAnswer()">
+        </form>
+        <img src = "../QWork/clippaper.png" class="full-width" alt ="Clipboard">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3 index-part" id="next-btn-wrapper">
+        <a href="quest2.html">
+          <img src="../QWork/next.png" alt="Next Quest" id="next-btn">
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/showAns.js"></script>
+  </body>
+</html>
