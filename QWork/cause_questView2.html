@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>事業</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid" id="quest-warp">
+      <div class="col-sm-12 col-md-6 col-lg-4"  id="quest-note-wrapper">
+        <img src = "../image/post.png" class="full-width" id="quest-note">
+		<!--<span style="position: absolute; top: 40%; left: 0; text-align:center; word-break:break-all; margin-left: 100px; width:16em ;">「錢多事少離家近、睡覺睡到自然醒！」想必這是許多人心中最夢幻的工作條件，然而職場競爭激烈，找工作大不易！好不容易接到公司的面試通知，你也慎重其事的提前到達面試地點，這時突然聽到有人叫你的名字，請問你覺得會是誰？</span>-->
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-5" id="quest-form-wrapper">
+        <form method="post" class="embed-responsive-item full-width" id="quest-form">
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q1" value="1">
+              A.藥燉排骨
+            
+            <p class="quest-answer">
+              <small class="hide" id="A1">				解答：你在找工作的過程中，還有非常大的進步空間，也代表了你目前的求職態度並不積極，有一搭沒一搭的找，當然不容易成功，唯有下定決心、充滿自信的時候，做足了準備，熟悉即將投入的行業，錄取的機會便可增加。
+              </small>
+            </p>
+			</label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q2" value="2">
+              B.臭豆腐
+              <p class="quest-answer">
+                <small class="hide" id="A2"> 解答：你的工作阻礙是不懂團隊合作。即使你在職場上是個能力很強，甚至可以獨立作業的人，但除非你是SOHO族，要不然團隊合作對於工作來說還是很重要的一環，記住：三個臭皮匠勝過一個諸葛亮，可別因為自視甚高而變成自我設限。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q3" value="3">
+              C.豬血糕
+              <p class="quest-answer">
+                <small class="hide" id="A3">解答：你的工作阻礙在於不知應變。你是個老闆叫你往東絕不敢往西的聽話好員工，但有時卻不知變通反而危機重重，無法當機立斷解決問題，導致老闆也不敢將重責大任交付給你。奉勸你腦筋要動得快一點，才能在瞬息萬變的職場求生存！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q4" value="4">
+              D.麻油雞
+              <p class="quest-answer">
+                <small class="hide" id="A4">解答：你的工作阻礙在於人際關係的不協調。雖說做好份內的事是第一優先，但不能因此忽略與同事及長官的互動溝通，活在自己的象牙塔裡，或是自成小團體，不但對事業無所幫助，也容易讓自己邊緣化，成為可有可無的雞肋員工。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q5" value="5">
+              E.蚵仔煎
+              <p class="quest-answer">
+                <small class="hide" id="A5">解答：你的工作阻礙來自於環境的影響，例如公司政策、人事調動等，都是左右你在職場表現的原因；當外頭風吹草動時，心裡更要有定見，才不會被牽著鼻子走。要是深覺小蝦米對抗不了大鯨魚的話，那就該考慮換個更適合你的地方發展。
+                </small>
+              </p>
+            </label>
+          </div>
+          <input class="btn btn-default full-width" value="確定" id="sure" onclick="showAnswer()">
+        </form>
+        <img src = "../image/clippaper.png" class="full-width" alt ="Clipboard">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3 index-part" id="next-btn-wrapper">
+        <a href="cause_questView3.html">
+            <img src="../image//next.png" alt="Next Quest" id="next-btn">
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/showAns.js"></script>
+  </body>
+</html>
