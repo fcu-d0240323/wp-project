@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid" id="quest-warp">
+      <div class="col-sm-12 col-md-6 col-lg-4"  id="quest-note-wrapper">
+        <img src = "post3.png" class="full-width" id="quest-note">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-5" id="quest-form-wrapper">
+        <form method="post" class="embed-responsive-item full-width" id="quest-form">
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q1" value="1">
+              香草巧克力
+              <p class="quest-answer">
+                <small class="hide" id="A1">
+                  過於誠實選擇香草巧克力的你，是一個誠實守信的人，但是你的缺點也恰恰是因為這個。太過誠實的你，有時候可能會不知不覺的得罪人，記得下次在說實話的時候要 hold 住一些，註意講話的技巧哦！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q2" value="2">
+              巧克力脆珠珠
+              <p class="quest-answer">
+                <small class="hide" id="A2">
+                  太忠心你是一個忠心的人，認定了自己想要追隨的人就會全心全意的遵從這個人的要求。過於忠誠的你，有時候卻容易看不清人的真面目，從而支持一個錯誤的人。在幫別人做事的時候記得給自己設立一個底線，同時也要認真辨別這個人是不是真的值得你追隨。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q3" value="3">
+              姜餅曲奇
+              <p class="quest-answer">
+                <small class="hide" id="A3">
+                  太可愛你是一個人見人愛的人，性格隨和討人喜歡。這樣可愛的你，有時候即使認真起來，也會被人當做是在開玩笑。下次如果有人做了你不喜歡的事情，請記得一定要大膽告訴他們，這件事情對你來說很冒犯！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q4" value="4">
+              馬卡龍
+              <p class="quest-answer">
+                <small class="hide" id="A4">
+                  完美主義你是一個完美主義者，可能有時還有些輕微的強迫癥。細致入微是一件好事，但要是開始鉆牛角尖，有時候卻是會帶來壓力的。要記住，十全十美並不存在這個世界上，璞玉還會有瑕疵呢，不完美的完美可能才是最好的選擇。
+                </small>
+              </p>
+            </label>
+          </div>
+          <input class="btn btn-default full-width" value="確定" id="sure" onclick="showAnswer()">
+        </form>
+        <img src = "../QWork/clippaper.png" class="full-width" alt ="Clipboard">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3 index-part" id="next-btn-wrapper">
+        <a href="quest4.html">
+          <img src="../QWork/next.png" alt="Next Quest" id="next-btn">
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/showAns.js"></script>
+  </body>
+</html>

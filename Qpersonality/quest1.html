@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid" id="quest-warp">
+      <div class="col-sm-12 col-md-6 col-lg-4"  id="quest-note-wrapper">
+        <img src = "post1.png" class="full-width" id="quest-note">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-5" id="quest-form-wrapper">
+        <form method="post" class="embed-responsive-item full-width" id="quest-form">
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q1" value="1">
+              大笑
+              <p class="quest-answer">
+                <small class="hide" id="A1">
+                  平時你很少將心情表現在臉上，你無論高興或生氣，外在只表現30%，別人很難猜測你的心意。但其實你是很壓抑情緒的人，平時看似穩定的你，可能在瞬間爆發，讓別人有點不知所措。面對感情你很主動，看到心儀的人，你不善於等待，你一定會直接或間接讓對方知道你的心意。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q2" value="2">
+              跳起來
+              <p class="quest-answer">
+                <small class="hide" id="A2">
+                  你的心裡是悲是喜，都表現在臉上，你是一個無論高興或難過都藏不住的人，一點小事能讓你高興，也能讓你悲傷，但是你恢復得也快。另外，你很不會說謊，你說謊時的臉色一定異於平時，讓對方一眼就看穿，勸你還是誠實為上吧！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q3" value="3">
+              緊緊握住彩卷
+              <p class="quest-answer">
+                <small class="hide" id="A3">
+                  你是一個社交型的人物，在團體中，你把彼此的溝通與相處看得很重要，因此你人緣多半不錯。你同時注重自己的形象與談吐是否合宜，但你也不會隱藏自己的情緒，會找人來傾訴。你對金錢看得很重，小心別因為錢傷了朋友的和氣！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q4" value="4">
+              呆住,沒有任何動作
+              <p class="quest-answer">
+                <small class="hide" id="A4">
+                  你是一個情緒化的人，有時顯得活潑好動，像是人群中的焦點，有時顯得孤獨，一個人身處人群外。你的情緒也容易因為別人的讚賞而高興，因為別人的評論而思索，你是一個敏感的人。另外，在戀愛方面，你有暗戀上一個不愛你的人的傾向，勸你不要太早放感情喔！
+                </small>
+              </p>
+            </label>
+          </div>
+          <input class="btn btn-default full-width" value="確定" id="sure" onclick="showAnswer()">
+        </form>
+        <img src = "../QWork/clippaper.png" class="full-width" alt ="Clipboard">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3 index-part" id="next-btn-wrapper">
+        <a href="quest2.html">
+          <img src="../QWork/next.png" alt="Next Quest" id="next-btn">
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/showAns.js"></script>
+  </body>
+</html>
