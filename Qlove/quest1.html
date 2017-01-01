@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid" id="quest-warp">
+      <div class="col-sm-12 col-md-6 col-lg-4"  id="quest-note-wrapper">
+        <img src = "post1.png" class="full-width" id="quest-note">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-5" id="quest-form-wrapper">
+        <form method="post" class="embed-responsive-item full-width" id="quest-form">
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q1" value="1">
+              義式提拉米蘇
+              <p class="quest-answer">
+                <small class="hide" id="A1">
+                  對方並非單身，卻渴望單身的無拘與自由，只能像朋友陪伴他的你，戀上時就像品嚐提拉米蘇，可可粉的微苦，伴隨著咖啡酒味，帶出靈魂般的那份香滑甜膩，層次分明的愛戀，卻混雜著說不出的苦澀，「帶我走吧！」那是你隱藏心底的渴望。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q2" value="2">
+              中式小籠包
+              <p class="quest-answer">
+                <small class="hide" id="A2">
+                  皮薄餡美、湯汁鮮郁的小籠包，熱騰騰的吃最是令人回味，不過要小心燙了口！就像你所選擇的這個對象，雖然他是單身，彼此印象也不錯，但是想要更進一步的話，兩人默契還不夠，容易有爭吵，須要更多的磨合與包容，所以先收斂收斂脾氣吧！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q3" value="3">
+              日式和菓子
+              <p class="quest-answer">
+                <small class="hide" id="A3">
+                  愛情，是你精心期待的和菓子，精緻巧妙、製工費時，挑剔要求不為什麼，只為嚐一口甜香細膩，雋永於心。他目前沒有男(女)朋友，你們又是情投意合，就別再矜持等待，主動出擊才不會錯失良機，把握到來的緣分，你就能享受甜蜜戀情！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q4" value="4">
+              法式鹹派
+              <p class="quest-answer">
+                <small class="hide" id="A4">
+                  名為「戀愛」的法式鹹派，你是調味的廚師，加點浪漫、多點關心，烤完後的香味四溢，撲鼻而來的愛情氛圍，送給單身的他，不只抓住他的胃，更要佔領他的心！戀愛的力量就在你手上，你是這場戀情的領袖，積極進攻，吹響勝利的號角！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q5" value="5">
+              美式鬆餅
+              <p class="quest-answer">
+                <small class="hide" id="A5">
+                  目前的他身邊已經有伴，或者說他心有所屬，所以不要自找麻煩了，否則容易陷入尷尬僵局，就像硬要給美式鬆餅加上一堆不適合配料，吃得粗飽卻不見得對味。勉強求來的愛情不長久，倒不如放手，還圖個輕鬆自在。
+                </small>
+              </p>
+            </label>
+          </div>
+          <input class="btn btn-default full-width" value="確定" id="sure" onclick="showAnswer()">
+        </form>
+        <img src = "../QWork/clippaper.png" class="full-width" alt ="Clipboard">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3 index-part" id="next-btn-wrapper">
+        <a href="quest2.html">
+          <img src="../QWork/next.png" alt="Next Quest" id="next-btn">
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/showAns.js"></script>
+  </body>
+</html>

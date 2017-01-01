@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>quest View</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="../css/questView.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid" id="quest-warp">
+      <div class="col-sm-12 col-md-6 col-lg-4"  id="quest-note-wrapper">
+        <img src = "post2.png" class="full-width" id="quest-note">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-5" id="quest-form-wrapper">
+        <form method="post" class="embed-responsive-item full-width" id="quest-form">
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q1" value="1">
+              假裝鎮定
+              <p class="quest-answer">
+                <small class="hide" id="A1">
+                  你們的關係還算穩定，不過未來仍會出現影響與變動的原因或刺激，主要在於你覺得一直在付出，但是並沒有感覺到真實回報，一有爭吵，便會懷疑是否值得繼續下去。記得多愛自己，平衡你在愛情角色與真實自我之間的拉扯。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q2" value="2">
+               驚聲尖叫
+              <p class="quest-answer">
+                <small class="hide" id="A2">
+                  這段關係帶來的痛苦多過快樂，你們的個性雖然可以互補，不過有時想法觀念差異太大，容易起爭執，會很想控制對方，但是又覺得不能得到滿足，時間累積下來，彼此成見加深。若想與另一半維持較長久的關係，就得退一步，愛情才會海闊天空。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q3" value="3">
+              用手摀眼
+              <p class="quest-answer">
+                <small class="hide" id="A3">
+                  你們很享受現在的戀愛模式，雙方的全心投入，將兩顆心緊緊地繫在一起，也能從這個情感關係中開發出許多感情方面的潛能，縱使考驗挫折，但憑兩人齊心合力，沒有敵不過的難關，相信自己、相信愛情，一輩子的依靠就在你眼前！
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q4" value="4">
+              藉故離開
+              <p class="quest-answer">
+                <small class="hide" id="A4">
+                  對於現在這個愛情關係，你有著「恨鐵不成鋼」的無力與無奈，老夫老妻式的相處，愛情火花不再，很多問題也慢慢浮現，影響兩人感情，有時候還真想就這樣結束，但卻又心有不甘。若雙方對未來沒有共同目標，那麼關係是無法長久的。
+                </small>
+              </p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quest" id="Q5" value="5">
+              目瞪口呆
+              <p class="quest-answer">
+                <small class="hide" id="A5">
+                  你們的情感關係岌岌可危，近期恐怕出現其他的競爭者，或是容易受到外界誘惑而心猿意馬，如果不能理智處理，雙方的關係恐瀕臨瓦解！感情若要長久，只靠單方面努力是不夠的，必須以愛為出發點多些互動與溝通喔！
+                </small>
+              </p>
+            </label>
+          </div>
+          <input class="btn btn-default full-width" value="確定" id="sure" onclick="showAnswer()">
+        </form>
+        <img src = "../QWork/clippaper.png" class="full-width" alt ="Clipboard">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3 index-part" id="next-btn-wrapper">
+        <a href="quest3.html">
+          <img src="../QWork/next.png" alt="Next Quest" id="next-btn">
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/showAns.js"></script>
+  </body>
+</html>
